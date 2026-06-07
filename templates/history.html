@@ -3,7 +3,7 @@
 {% block content %}
 <div class="row align-items-center mb-4">
     <div class="col-md-8">
-        <h1 class="text-white fw-bold mb-1">RCA Analysis History</h1>
+        <h1 class=" fw-bold mb-1">RCA Analysis History</h1>
         <p class="text-secondary mb-0">Browse and search all historical incident investigations and resolution paths.</p>
     </div>
 </div>
@@ -16,11 +16,11 @@
                 <div class="col-md-4">
                     <div class="input-group">
                         <span class="input-group-text bg-transparent border-secondary border-opacity-25 text-secondary"><i class="bi bi-search"></i></span>
-                        <input type="text" id="search-input" class="form-control bg-transparent border-secondary border-opacity-25 text-white" placeholder="Search by error keyword...">
+                        <input type="text" id="search-input" class="form-control bg-transparent border-secondary border-opacity-25 " placeholder="Search by error keyword...">
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <select id="severity-filter" class="form-select bg-transparent border-secondary border-opacity-25 text-white" style="background-color: var(--bg-slate) !important;">
+                    <select id="severity-filter" class="form-select bg-transparent border-secondary border-opacity-25 " style="background-color: var(--bg-slate) !important;">
                         <option value="all" class="text-dark">All Severities</option>
                         <option value="critical" class="text-dark">Critical</option>
                         <option value="high" class="text-dark">High</option>
@@ -33,7 +33,7 @@
             <!-- Table of Historical Reports -->
             {% if reports %}
                 <div class="table-responsive">
-                    <table class="table table-dark table-hover align-middle mb-0" id="history-table" style="--bs-table-bg: transparent; --bs-table-hover-bg: rgba(255,255,255,0.02); --bs-table-border-color: rgba(255,255,255,0.05);">
+                    <table class="table table-custom table-hover align-middle mb-0" id="history-table" style="--bs-table-bg: transparent; --bs-table-hover-bg: rgba(0,0,0,0.02); --bs-table-border-color: rgba(0,0,0,0.05);">
                         <thead>
                             <tr class="text-secondary small">
                                 <th>Incident ID</th>
@@ -51,11 +51,11 @@
                                     <span class="text-primary font-mono fw-bold">RCA-{{ "%04d" | format(report.id) }}</span>
                                 </td>
                                 <td>
-                                    <span class="text-white">{{ report.created_at.strftime('%Y-%m-%d') }}</span>
+                                    <span class="">{{ report.created_at.strftime('%Y-%m-%d') }}</span>
                                     <div class="text-secondary small">{{ report.created_at.strftime('%H:%M:%S UTC') }}</div>
                                 </td>
                                 <td>
-                                    <div class="text-white fw-semibold mb-0.5 text-truncate" style="max-width: 380px;">{{ report.failure_summary }}</div>
+                                    <div class=" fw-semibold mb-0.5 text-truncate" style="max-width: 380px;">{{ report.failure_summary }}</div>
                                     <div class="text-secondary small text-truncate" style="max-width: 380px;">{{ report.root_cause }}</div>
                                 </td>
                                 <td>
@@ -64,7 +64,7 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <span class="fw-semibold text-white">{{ report.confidence_score }}</span>
+                                    <span class="fw-semibold ">{{ report.confidence_score }}</span>
                                 </td>
                                 <td class="text-end">
                                     <div class="btn-group">

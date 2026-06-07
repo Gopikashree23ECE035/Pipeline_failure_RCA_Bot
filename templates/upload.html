@@ -3,7 +3,7 @@
 {% block content %}
 <div class="row align-items-center mb-4">
     <div class="col-12">
-        <h1 class="text-white fw-bold mb-1">Upload Pipeline Logs</h1>
+        <h1 class=" fw-bold mb-1">Upload Pipeline Logs</h1>
         <p class="text-secondary mb-0">Upload failed logs to run root-cause analysis or historical successful logs for comparison.</p>
     </div>
 </div>
@@ -11,7 +11,7 @@
 <div class="row g-4 justify-content-center">
     <div class="col-lg-6">
         <div class="glass-card">
-            <h3 class="text-white h5 mb-4 fw-bold"><i class="bi bi-file-earmark-arrow-up text-primary me-2"></i>Select Log File</h3>
+            <h3 class=" h5 mb-4 fw-bold"><i class="bi bi-file-earmark-arrow-up text-primary me-2"></i>Select Log File</h3>
             
             <form action="{{ url_for('upload.upload_log') }}" method="POST" enctype="multipart/form-data">
                 <!-- Log Type Selection -->
@@ -68,13 +68,13 @@
     <!-- Upload Instructions and Tips -->
     <div class="col-lg-5">
         <div class="glass-card h-100">
-            <h3 class="text-white h5 mb-3 fw-bold"><i class="bi bi-lightbulb text-primary me-2"></i>Analysis Recommendations</h3>
+            <h3 class=" h5 mb-3 fw-bold"><i class="bi bi-lightbulb text-primary me-2"></i>Analysis Recommendations</h3>
             
             <div class="d-flex flex-column gap-3 text-secondary small mt-3">
                 <div class="d-flex gap-3 align-items-start">
                     <div class="text-primary fs-4"><i class="bi bi-1-circle"></i></div>
                     <div>
-                        <h6 class="text-white fw-bold mb-1">Step 1: Upload a Successful Log</h6>
+                        <h6 class=" fw-bold mb-1">Step 1: Upload a Successful Log</h6>
                         <p>Providing the most recent successful pipeline execution log helps the AI RCA Generator isolate environmental variances and configuration deltas.</p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                 <div class="d-flex gap-3 align-items-start">
                     <div class="text-primary fs-4"><i class="bi bi-2-circle"></i></div>
                     <div>
-                        <h6 class="text-white fw-bold mb-1">Step 2: Upload the Failed Log</h6>
+                        <h6 class=" fw-bold mb-1">Step 2: Upload the Failed Log</h6>
                         <p>Select "Failed Log", drop the execution log containing stack traces, database exceptions, or output dumps, and upload it.</p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                 <div class="d-flex gap-3 align-items-start">
                     <div class="text-primary fs-4"><i class="bi bi-3-circle"></i></div>
                     <div>
-                        <h6 class="text-white fw-bold mb-1">Step 3: Trigger the Analysis Loop</h6>
+                        <h6 class=" fw-bold mb-1">Step 3: Trigger the Analysis Loop</h6>
                         <p>Once both files are registered, our multi-agent model loop fetches GitHub commits and automatically identifies which changes introduced the bug.</p>
                     </div>
                 </div>

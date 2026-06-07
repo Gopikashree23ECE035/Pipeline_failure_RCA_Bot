@@ -15,30 +15,20 @@ def get_db():
 def get_next_sequence_value(sequence_name):
     """
     Generates a sequential auto-incrementing integer ID using a counters collection.
-    Supports both real PyMongo and mock local fallbacks.
     """
     db = models.db
-    is_mock = models.is_mock
     if db is None:
         logger.error("Database not initialized")
         raise RuntimeError("Database connection not established")
     
-    if is_mock:
-        counter = db.counters.find_one_and_update(
-            {'_id': sequence_name},
-            {'$inc': {'sequence_value': 1}},
-            upsert=True
-        )
-        return counter['sequence_value'] if counter else 1
-    else:
-        from pymongo import ReturnDocument
-        counter = db.counters.find_one_and_update(
-            {'_id': sequence_name},
-            {'$inc': {'sequence_value': 1}},
-            upsert=True,
-            return_document=ReturnDocument.AFTER
-        )
-        return counter['sequence_value']
+    from pymongo import ReturnDocument
+    counter = db.counters.find_one_and_update(
+        {'_id': sequence_name},
+        {'$inc': {'sequence_value': 1}},
+        upsert=True,
+        return_document=ReturnDocument.AFTER
+    )
+    return counter['sequence_value']
 
 class MongoDoc:
     """
