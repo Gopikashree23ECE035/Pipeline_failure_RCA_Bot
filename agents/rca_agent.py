@@ -1,8 +1,81 @@
 import json
 
 class RCAAgent:
+    ALLOWED_SEVERITIES = ["Critical", "High", "Medium", "Low"]
+
     def __init__(self, ollama_service):
         self.ollama = ollama_service
+
+    def _normalize_severity(self, severity, failure_summary=None, errors=None):
+        """Normalize severity output to one of the allowed severity levels."""
+        if isinstance(severity, str):
+            cleaned = severity.strip().lower()
+            for level in self.ALLOWED_SEVERITIES:
+                if cleaned == level.lower():
+                    return level
+            for level in self.ALLOWED_SEVERITIES:
+                if level.lower() in cleaned:
+                    return level
+
+        text = []
+        if failure_summary:
+            text.append(str(failure_summary))
+        if isinstance(errors, list):
+            for error in errors:
+                if isinstance(error, dict):
+                    text.append(error.get('error_type', ''))
+                    text.append(error.get('message', ''))
+                    text.append(error.get('stack_trace', ''))
+                else:
+                    text.append(str(error))
+        combined = " ".join([t.lower() for t in text if t])
+
+        critical_keywords = ["fatal", "panic", "segfault", "core dumped", "out of memory", "permission denied", "access denied", "disk full", "unhandled exception", "data loss", "stack overflow", "critical error", "traceback"]
+        high_keywords = ["connection refused", "failed to connect", "timeout", "cannot connect", "connection timeout", "database error", "error", "exception"]
+        medium_keywords = ["warning", "deprecated", "slow", "retry", "retrying", "timeout warning", "limited", "throttled"]
+
+        if any(k in combined for k in critical_keywords):
+            return "Critical"
+        if any(k in combined for k in high_keywords):
+            return "High"
+        if any(k in combined for k in medium_keywords):
+            return "Medium"
+        return "Low"
+
+    def _adjust_severity_for_confidence(self, severity, confidence_score):
+        """Adjust severity based on the confidence score thresholds.
+
+        Rules:
+        - Critical should only remain Critical if confidence > 80
+        - High should only remain High if confidence > 70
+        - Medium should only remain Medium if confidence > 55
+        - Otherwise downgrade to Low
+        """
+        try:
+            if isinstance(confidence_score, str):
+                conf_value = float(confidence_score.replace('%', '').strip())
+            else:
+                conf_value = float(confidence_score)
+        except Exception:
+            return severity
+
+        if conf_value > 80:
+            if severity == "Critical":
+                return "Critical"
+            return severity
+        if conf_value > 70:
+            if severity == "Critical":
+                return "High"
+            if severity == "High":
+                return "High"
+            return severity
+        if conf_value > 55:
+            if severity in ("Critical", "High"):
+                return "Medium"
+            if severity == "Medium":
+                return "Medium"
+            return "Low"
+        return "Low"
 
     def analyze(self, log_analysis, github_analysis, success_log_content=None):
         """
@@ -60,6 +133,16 @@ class RCAAgent:
                 result["recommendation"] = "Review the failure and correlated diffs."
             if "retry_steps" not in result:
                 result["retry_steps"] = "1. Clean up.\n2. Rerun."
+
+            result["severity"] = self._normalize_severity(
+                result.get("severity"),
+                failure_summary=log_analysis.get("failure_summary"),
+                errors=log_analysis.get("errors")
+            )
+            result["severity"] = self._adjust_severity_for_confidence(
+                result["severity"],
+                result.get("confidence_score")
+            )
             return result
         except Exception as e:
             return {

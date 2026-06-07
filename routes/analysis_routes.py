@@ -18,8 +18,17 @@ def analyze():
         log_data = db.logs.find_one({'_id': log_id})
         failed_log = MongoDoc(log_data) if log_data else None
     else:
-        # Fallback to the latest uploaded failure log
-        results = list(db.logs.find({'log_type': 'failure'}, sort=[('uploaded_at', -1)]).limit(1))
+        # Fallback to the latest uploaded failure log -- handle both real PyMongo cursors and mock lists
+        results_cursor = db.logs.find({'log_type': 'failure'}, sort=[('uploaded_at', -1)])
+        try:
+            # PyMongo cursor supports .limit()
+            if hasattr(results_cursor, 'limit'):
+                results = list(results_cursor.limit(1))
+            else:
+                results = list(results_cursor)[:1]
+        except Exception:
+            # Last-resort: coerce to list and slice
+            results = list(results_cursor)[:1]
         failed_log = MongoDoc(results[0]) if results else None
         
     if not failed_log:

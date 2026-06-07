@@ -43,7 +43,7 @@
                         <h5>Drag & Drop your log file here</h5>
                         <p class="text-secondary small mb-0">Supports .log or .txt files (max 10MB)</p>
                     </div>
-                    <input type="file" name="log_file" id="log_file" accept=".log,.txt" class="d-none" required>
+                    <input type="file" name="log_file" id="log_file" accept=".log,.txt" class="d-none">
                     <!-- File Selected Display -->
                     <div id="file-selected" class="mt-3 p-3 bg-success bg-opacity-10 border border-success border-opacity-25 rounded d-none">
                         <div class="d-flex align-items-center gap-2">
@@ -115,7 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update button state
     function updateButtonState() {
-        if (fileInput.files.length > 0) {
+        const hasFile = fileInput.files.length > 0;
+
+        if (hasFile) {
             const file = fileInput.files[0];
             fileNameSpan.textContent = `${file.name} - ${(file.size / 1024).toFixed(2)} KB`;
             fileSelectedDiv.classList.remove('d-none');
@@ -176,7 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form submission handler
     form.addEventListener('submit', function(e) {
-        if (!fileInput.files || fileInput.files.length === 0) {
+        const hasFile = fileInput.files && fileInput.files.length > 0;
+
+        if (!hasFile) {
             e.preventDefault();
             alert('Please select a log file before submitting.');
             return false;
