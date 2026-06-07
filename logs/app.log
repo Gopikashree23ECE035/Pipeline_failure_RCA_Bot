@@ -929,3 +929,86 @@
 2026-06-07 13:01:51,457 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "GET /github-analysis HTTP/1.1" 200 -
 2026-06-07 13:01:51,936 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2026-06-07 13:01:51,937 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:02:34,149 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:34] "GET /history HTTP/1.1" 200 -
+2026-06-07 13:02:34,187 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:02:34,194 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:02:35,184 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:35] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 13:02:35,235 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:02:35,238 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:02:36,203 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:36] "GET / HTTP/1.1" 200 -
+2026-06-07 13:02:36,285 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:02:36,287 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:02:37,393 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:02:37,394 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:02:38,746 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:02:38,747 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:02:38,753 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:38] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:02:38,824 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:02:38,828 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:02:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:07:35,784 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:35] "GET / HTTP/1.1" 200 -
+2026-06-07 13:07:35,826 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 13:07:35,829 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:07:37,397 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:37] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 13:07:37,453 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:07:37,455 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:07:38,282 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:38] "GET /history HTTP/1.1" 200 -
+2026-06-07 13:07:38,319 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:07:38,324 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:07:39,310 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:07:39,311 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:07:40,764 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:07:40,765 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:07:40,770 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:40] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:07:40,861 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:07:40,867 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:07:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:11:45,088 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:45] "GET / HTTP/1.1" 200 -
+2026-06-07 13:11:45,137 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:11:45,138 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:11:46,519 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:46] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 13:11:46,585 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:11:46,588 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:11:47,826 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:47] "GET /history HTTP/1.1" 200 -
+2026-06-07 13:11:47,865 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:11:47,867 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:11:49,225 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:11:49,226 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:11:50,564 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:11:50,565 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:11:50,630 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:50] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:11:50,695 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:11:50,697 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:11:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:11:59,051 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:11:59,052 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:12:00,358 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:12:00,359 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:12:00,364 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:12:00] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:12:00,431 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:12:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:12:00,431 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:12:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:14:50,682 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:14:50,682 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:14:51,728 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:14:51,729 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:14:51,733 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 13:14:51] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:14:51,795 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 13:14:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 13:14:51,797 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 13:14:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:14:53,183 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 13:14:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
