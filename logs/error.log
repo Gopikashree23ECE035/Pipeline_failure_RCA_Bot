@@ -64,3 +64,93 @@
   "documentation_url": "https://docs.github.com/rest",
   "status": "401"
 }
+2026-06-07 12:46:25,515 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,517 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,183 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,184 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,122 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,123 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,939 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,940 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,111 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,112 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,003 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,004 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}

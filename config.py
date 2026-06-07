@@ -2,10 +2,11 @@ import os
 # pyrefly: ignore [missing-import]
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv(override=True)
-
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+# Load environment variables from .env file explicitly
+env_path = os.path.join(BASE_DIR, '.env')
+load_dotenv(dotenv_path=env_path, override=True)
 
 class Config:
     # Flask settings

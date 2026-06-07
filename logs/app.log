@@ -652,3 +652,219 @@
 2026-06-07 12:40:37,916 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "GET /github-analysis HTTP/1.1" 200 -
 2026-06-07 12:40:37,971 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2026-06-07 12:40:37,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:42,417 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "GET / HTTP/1.1" 200 -
+2026-06-07 12:44:42,470 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:44:42,477 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:46,352 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:44:46,409 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:46,411 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:49,213 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "GET / HTTP/1.1" 200 -
+2026-06-07 12:44:49,253 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:49,256 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:22,315 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:46:22,355 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:46:22,358 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:23,220 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:46:23,331 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:46:23,333 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:25,515 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,517 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,557 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:46:25,625 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:46:25,634 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:46:25,680 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=q0NmpnUKxOrNpJOJhCTO HTTP/1.1" 200 -
+2026-06-07 12:46:25,896 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:47:21,183 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,184 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,196 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:21] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,698 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:24,720 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:47:24,722 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:47:24,731 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=q0NmpnUKxOrNpJOJhCTO HTTP/1.1[0m" 304 -
+2026-06-07 12:47:25,789 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:25] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:47:44,803 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:47:44,807 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:47:45,186 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:47:45,195 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:47:45,950 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:47:45,950 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:46,796 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:46,801 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:47:46,812 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:46,819 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:47:48,103 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:47:48,103 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:47:49,122 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,123 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,164 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:49,515 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:47:49,523 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:47:49,565 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1" 200 -
+2026-06-07 12:47:49,768 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:47:54,257 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:47:54,258 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:47:54,939 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,940 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,947 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:54] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:14,863 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:53:14,864 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,859 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:15,917 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:15,921 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:16,246 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:16] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1" 200 -
+2026-06-07 12:53:16,980 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:16] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:53:21,567 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "GET / HTTP/1.1" 200 -
+2026-06-07 12:53:21,629 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:53:21,950 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:39,648 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:53:39,682 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:39,980 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:53:39,981 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:53:39,984 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:53:40,489 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:53:40,523 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:40,784 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:53:40,787 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:53:46,306 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "GET / HTTP/1.1" 200 -
+2026-06-07 12:53:46,377 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:46,548 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:48,198 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:53:48,392 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:48,448 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:50,592 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:53:50,660 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:50,819 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:53,815 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:53:53,816 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:53:55,111 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,112 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,141 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:55,210 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:55,214 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:55,544 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1[0m" 304 -
+2026-06-07 12:54:27,542 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET / HTTP/1.1" 200 -
+2026-06-07 12:54:27,586 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:54:27,589 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:54:29,790 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:54:29,790 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:54:29,862 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:54:29,862 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,986 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:30] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:54:31,003 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,004 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,037 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:54:31,115 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:54:31,117 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:54:31,332 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:56:02,336 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\app.py', reloading
+2026-06-07 12:56:02,547 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\app.py', reloading
+2026-06-07 12:56:02,783 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:03,141 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:03,404 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:03,436 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,718 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:03,763 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,787 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:03,791 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:04,066 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:04,069 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:20,297 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:56:20,872 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:21,047 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:56:21,558 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:21,626 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:21,639 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:22,214 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:22,224 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:22,461 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:22,517 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:22,894 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:22,899 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:31,715 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:56:31,715 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:56:34,417 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:56:34,730 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:56:34,732 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

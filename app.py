@@ -1,5 +1,6 @@
 import os
 import logging
+# pyrefly: ignore [missing-import]
 from flask import Flask, render_template
 from config import Config
 from models import init_db
