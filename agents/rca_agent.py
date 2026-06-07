@@ -42,6 +42,41 @@ class RCAAgent:
             return "Medium"
         return "Low"
 
+    def _adjust_severity_for_confidence(self, severity, confidence_score):
+        """Adjust severity based on the confidence score thresholds.
+
+        Rules:
+        - Critical should only remain Critical if confidence > 80
+        - High should only remain High if confidence > 70
+        - Medium should only remain Medium if confidence > 55
+        - Otherwise downgrade to Low
+        """
+        try:
+            if isinstance(confidence_score, str):
+                conf_value = float(confidence_score.replace('%', '').strip())
+            else:
+                conf_value = float(confidence_score)
+        except Exception:
+            return severity
+
+        if conf_value > 80:
+            if severity == "Critical":
+                return "Critical"
+            return severity
+        if conf_value > 70:
+            if severity == "Critical":
+                return "High"
+            if severity == "High":
+                return "High"
+            return severity
+        if conf_value > 55:
+            if severity in ("Critical", "High"):
+                return "Medium"
+            if severity == "Medium":
+                return "Medium"
+            return "Low"
+        return "Low"
+
     def analyze(self, log_analysis, github_analysis, success_log_content=None):
         """
         Runs Agent 3: RCA Generator.
@@ -103,6 +138,10 @@ class RCAAgent:
                 result.get("severity"),
                 failure_summary=log_analysis.get("failure_summary"),
                 errors=log_analysis.get("errors")
+            )
+            result["severity"] = self._adjust_severity_for_confidence(
+                result["severity"],
+                result.get("confidence_score")
             )
             return result
         except Exception as e:

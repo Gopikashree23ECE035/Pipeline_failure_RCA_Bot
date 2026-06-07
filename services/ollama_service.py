@@ -90,6 +90,34 @@ class OllamaService:
                     pass
             raise ValueError("Ollama response could not be parsed as JSON")
 
+    def _estimate_fallback_severity_confidence(self, text):
+        """Estimate severity and confidence from the log text when Ollama is unavailable."""
+        normalized = text.lower()
+
+        critical_keywords = [
+            "fatal", "panic", "segfault", "core dumped", "out of memory",
+            "permission denied", "access denied", "disk full", "unhandled exception",
+            "data loss", "stack overflow", "critical error", "traceback",
+            "keyerror", "nullpointer", "indexerror", "runtimeerror", "exception"
+        ]
+        high_keywords = [
+            "connection refused", "failed to connect", "database error", "could not connect",
+            "connection timeout", "timeout", "authentication failed", "permission denied",
+            "service unavailable", "502", "503", "504", "broken pipe", "unreachable"
+        ]
+        medium_keywords = [
+            "warning", "deprecated", "slow", "retry", "retrying", "timeout warning",
+            "limited", "throttled", "rate limit", "cache miss", "retry attempt"
+        ]
+
+        if any(k in normalized for k in critical_keywords):
+            return "Critical", "90%"
+        if any(k in normalized for k in high_keywords):
+            return "High", "80%"
+        if any(k in normalized for k in medium_keywords):
+            return "Medium", "65%"
+        return "Low", "50%"
+
     def _simulate_agent_fallback(self, system_prompt, user_prompt):
         """
         A rule-based simulation engine that creates highly context-aware response payloads
@@ -165,6 +193,7 @@ class OllamaService:
 
         else:
             # AGENT 3 fallback: RCA GENERATOR
+<<<<<<< Updated upstream
             if "keyerror" in user_prompt_lower or "timestamp" in user_prompt_lower:
                 return {
                     "root_cause": "The pipeline failed due to a KeyError exception: 'timestamp' in pipeline/handler.py at line 15. This was directly introduced in commit 8c7a2b9f3d1e4e5f6a7b8c9d0e1f2a3b4c5d6e7f ('Refactor dictionary response keys in ETL payload formatting') by dev-engineer-lead. The commit changed the payload mapping keys to use 'ts' instead of 'timestamp', but downstream database loader script still expects the 'timestamp' key, leading to a crash when it tries to extract 'timestamp' from the payload dictionary.",
@@ -189,3 +218,35 @@ class OllamaService:
                     "recommendation": "Examine the worker memory profiles and database execution times. Increase execution timeout settings in pipeline configuration.",
                     "retry_steps": "1. Check server metrics for out of memory (OOM) alerts.\\n2. Clear pipeline temp locks.\\n3. Restart pipeline runner."
                 }
+=======
+            severity, confidence_score = self._estimate_fallback_severity_confidence(user_prompt_lower)
+
+            if severity == "Critical":
+                root_cause = (
+                    "The pipeline failed due to a severe runtime exception or system failure. "
+                    "This condition is critical and must be addressed immediately to restore pipeline stability."
+                )
+            elif severity == "High":
+                root_cause = (
+                    "The ETL job encountered a significant failure such as database connectivity or service unavailability. "
+                    "This issue is high-impact and can stop the pipeline from completing successfully."
+                )
+            elif severity == "Medium":
+                root_cause = (
+                    "The pipeline execution encountered a recoverable or degraded condition such as retries, warnings, or performance issues. "
+                    "This should be investigated but is less likely to be a full outage."
+                )
+            else:
+                root_cause = (
+                    "The pipeline log indicates a lower-impact issue or an informational condition. "
+                    "This is likely a minor configuration or environment discrepancy and should be verified."
+                )
+
+            return {
+                "root_cause": root_cause,
+                "confidence_score": confidence_score,
+                "severity": severity,
+                "recommendation": "Investigate the reported pipeline condition and apply an appropriate fix based on the log context.",
+                "retry_steps": "1. Review the pipeline output and configuration.\n2. Adjust any environment or connection settings.\n3. Re-run the pipeline after correcting the issue."
+            }
+>>>>>>> Stashed changes
