@@ -34,8 +34,34 @@ class OllamaService:
         Forces JSON output format and attempts to parse it.
         """
         if not self.check_connection():
-            logger.warning("Ollama not running or unreachable. Falling back to local rule-based simulation.")
-            return self._simulate_agent_fallback(system_prompt, user_prompt)
+            logger.warning("Ollama not running or unreachable. Using built-in rule-based simulator.")
+            if "Log Analyzer" in system_prompt:
+                return {
+                    "failure_summary": "Simulated failure summary: Pipeline crashed due to mock exception.",
+                    "errors": [
+                        {
+                            "error_type": "MockException",
+                            "message": "Connection timed out",
+                            "file": "pipeline.py",
+                            "line": 42,
+                            "stack_trace": "Traceback (most recent call last):\n  File \"pipeline.py\", line 42\nMockException"
+                        }
+                    ]
+                }
+            elif "Git Code Auditor" in system_prompt:
+                return {
+                    "commit_id": "abc123mock",
+                    "changed_files": ["pipeline.py"],
+                    "diff_summary": "Simulated diff summary: Added a mock timeout."
+                }
+            else:
+                return {
+                    "root_cause": "Simulated root cause: The Ollama service was unreachable, so this is a simulated analysis.",
+                    "confidence_score": "99%",
+                    "severity": "High",
+                    "recommendation": "Mock recommendation: Start the Ollama server to use real AI.",
+                    "retry_steps": "1. Run ollama serve\n2. Retry pipeline"
+                }
 
         url = f"{self.api_url}/api/chat"
         payload = {

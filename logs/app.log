@@ -265,3 +265,66 @@
 2026-06-07 00:02:32,552 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/css/style.css HTTP/1.1" 200 -
 2026-06-07 00:02:32,625 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/js/main.js HTTP/1.1" 200 -
 2026-06-07 00:02:34,036 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:10:10,462 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:10:10,499 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,655 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:10:10,683 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,687 - RCA-MongoDB-Test - INFO - DB STATUS: Connected to live MongoDB server.
+2026-06-07 12:10:10,688 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 9, Second: 10)
+2026-06-07 12:10:10,695 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:10:10,695 - RCA-MongoDB-Test - INFO - Step 3: Checking Ollama service status...
+2026-06-07 12:10:14,810 - RCA-MongoDB-Test - WARNING - WARNING: Ollama is unreachable at http://localhost:11434. Simulator mode will be used.
+2026-06-07 12:10:14,811 - RCA-MongoDB-Test - INFO - Step 4: Checking PDF generation pipeline...
+2026-06-07 12:10:14,814 - RCA-MongoDB-Test - ERROR - FAILURE: PDF generation compilation crashed. Error details: name 'inch' is not defined
+2026-06-07 12:10:14,815 - RCA-MongoDB-Test - ERROR - === SOME SANITY CHECKS FAILED ===
+2026-06-07 12:11:12,828 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:12,861 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,029 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:13,035 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,037 - RCA-MongoDB-Test - INFO - DB STATUS: Connected to live MongoDB server.
+2026-06-07 12:11:13,039 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 11, Second: 12)
+2026-06-07 12:11:13,043 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:11:13,043 - RCA-MongoDB-Test - INFO - Step 3: Checking Ollama service status...
+2026-06-07 12:11:17,158 - RCA-MongoDB-Test - WARNING - WARNING: Ollama is unreachable at http://localhost:11434. Simulator mode will be used.
+2026-06-07 12:11:17,158 - RCA-MongoDB-Test - INFO - Step 4: Checking PDF generation pipeline...
+2026-06-07 12:11:17,171 - RCA-MongoDB-Test - INFO - SUCCESS: PDF generated correctly. Compiled size: 2613 bytes.
+2026-06-07 12:11:17,172 - RCA-MongoDB-Test - INFO - === ALL SANITY TESTS COMPLETED SUCCESSFULLY ===
+2026-06-07 12:11:51,549 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:51,568 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:52,020 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:11:52,020 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:11:52,022 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:11:52,597 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:52,621 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:52,908 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:11:52,911 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:12:16,629 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET / HTTP/1.1" 200 -
+2026-06-07 12:12:16,961 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:12:16,965 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:12:17,882 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:12:19,827 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:12:19,859 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:19,863 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:20,917 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:12:20,952 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:20,955 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:22,143 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:12:22,182 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:22,185 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:26,153 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "GET / HTTP/1.1" 200 -
+2026-06-07 12:12:26,186 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:26,189 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:27,127 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:12:27,163 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:27,166 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:29,142 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:12:29,156 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:12:29,186 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:29,190 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:13:53,327 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:13:53,330 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:13:53,386 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:13:53,390 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
