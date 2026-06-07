@@ -18,47 +18,36 @@ def upload_log():
             flash("Invalid log type specified.", "danger")
             return redirect(url_for('upload.upload_log'))
 
-        # Check if the file is in the request
-        file_key = 'log_file'
-        if file_key not in request.files:
-            flash("No file part in the request.", "danger")
-            return redirect(url_for('upload.upload_log'))
+        file = request.files.get('log_file')
 
-        file = request.files[file_key]
-        if file.filename == '':
-            flash("No file selected.", "danger")
+        if not file or file.filename == '':
+            flash("Please select a log file to upload.", "danger")
             return redirect(url_for('upload.upload_log'))
 
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            # Read content
-            try:
-                content = file.read().decode('utf-8', errors='ignore')
-                
-                # Save physically to the uploads directory
-                upload_path = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
-                file.seek(0)
-                file.save(upload_path)
-                
-                # Save to Database using DB Service
-                log_record = DBService.save_log(
-                    filename=filename,
-                    log_type=log_type,
-                    content=content
-                )
-                
-                flash(f"Successfully uploaded {log_type} log: {filename}", "success")
-                
-                if log_type == 'failure':
-                    # Guide user to start the analysis directly
-                    return redirect(url_for('analysis.analyze', log_id=log_record.id))
-                else:
-                    return redirect(url_for('dashboard'))
-            except Exception as e:
-                flash(f"Error processing log file: {str(e)}", "danger")
-                return redirect(url_for('upload.upload_log'))
+            content = file.read().decode('utf-8', errors='ignore')
         else:
             flash("Invalid file extension. Please upload a .txt or .log file.", "danger")
             return redirect(url_for('upload.upload_log'))
+
+        # Save physically to the uploads directory
+        upload_path = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
+        with open(upload_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+
+        # Save to Database using DB Service
+        log_record = DBService.save_log(
+            filename=filename,
+            log_type=log_type,
+            content=content
+        )
+
+        flash(f"Successfully uploaded {log_type} log: {filename}", "success")
+
+        if log_type == 'failure':
+            return redirect(url_for('analysis.analyze', log_id=log_record.id))
+        else:
+            return redirect(url_for('dashboard'))
 
     return render_template('upload.html')

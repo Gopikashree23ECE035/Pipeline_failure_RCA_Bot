@@ -633,3 +633,227 @@
 2026-06-07 11:52:26,190 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 11:52:26] "GET / HTTP/1.1" 200 -
 2026-06-07 11:52:26,296 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 11:52:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2026-06-07 11:52:26,321 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 11:52:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 11:56:57,014 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\routes\\upload_routes.py', reloading
+2026-06-07 11:56:57,165 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\routes\\upload_routes.py', reloading
+2026-06-07 11:56:57,703 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 11:56:58,338 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 11:57:01,259 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 11:57:01,294 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 11:57:01,354 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 11:57:01,354 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 11:57:01,355 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 11:57:01,355 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:01:38,589 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:01:38,591 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:01:38,591 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:01:39,824 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.162.66:5000
+2026-06-07 12:01:39,824 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:01:39,858 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:01:42,017 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:01:42,018 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:01:42,019 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:01:42,983 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:01:42,996 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:01:50,379 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:01:50] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:04:34,149 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:04:34] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:04:34,390 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:04:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:04:34,401 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:04:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:06:10,397 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:06:10] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:06:10,416 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:06:15,175 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:06:19,505 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:06:23,810 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:06:23,816 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:06:23] "[32mGET /analyze?log_id=2 HTTP/1.1[0m" 302 -
+2026-06-07 12:06:23,902 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:06:23] "GET /report/1 HTTP/1.1" 200 -
+2026-06-07 12:06:24,088 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:06:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:06:24,091 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:06:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:07:12,202 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:12] "GET /report/1 HTTP/1.1" 200 -
+2026-06-07 12:07:13,695 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:07:13,698 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:07:30,011 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:30] "GET / HTTP/1.1" 200 -
+2026-06-07 12:07:30,107 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:07:30,110 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:07:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:19:53,920 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:20:02,542 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:20:08,873 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:20:14,071 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:20:14,464 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:14] "[32mGET /analyze HTTP/1.1[0m" 302 -
+2026-06-07 12:20:14,681 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:14] "GET /report/2 HTTP/1.1" 200 -
+2026-06-07 12:20:15,020 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:15,056 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:26,336 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:26] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:20:26,487 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:26,508 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:30:24,176 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:30:24] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:30:24,287 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:30:24] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:30:24,482 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:30:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:30:24,507 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:30:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:37:27,445 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:27] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:37:27,480 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:27] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:37:27,590 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:37:27,593 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:10,259 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:10] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:44:10,298 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:44:14,904 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:44:19,241 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:44:23,552 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:44:23,556 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:23] "[32mGET /analyze?log_id=3 HTTP/1.1[0m" 302 -
+2026-06-07 12:44:23,588 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:23] "GET /report/3 HTTP/1.1" 200 -
+2026-06-07 12:44:23,672 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:23,672 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:32,395 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:32] "GET / HTTP/1.1" 200 -
+2026-06-07 12:44:32,418 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:32,420 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:58,019 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:58] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:44:58,061 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:58,063 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:45:11,841 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:11] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:45:11,888 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:45:16,340 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:45:20,650 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:45:24,948 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:45:24,951 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:24] "[32mGET /analyze?log_id=4 HTTP/1.1[0m" 302 -
+2026-06-07 12:45:24,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:24] "GET /report/4 HTTP/1.1" 200 -
+2026-06-07 12:45:25,013 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:45:25,016 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:45:31,367 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:31] "GET / HTTP/1.1" 200 -
+2026-06-07 12:45:31,423 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:45:31,424 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:45:45,303 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:45] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:45:45,334 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:45:45,337 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:45:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:43,838 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\test_imports.py', reloading
+2026-06-07 12:46:45,006 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:46:50,460 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:46:50,462 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:46:50,463 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:46:52,057 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:46:52,092 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:46:57,861 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2026-06-07 12:46:58,416 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:47:12,109 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:47:12,119 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:47:12,121 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:47:21,256 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:21,341 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:47:32,710 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\routes\\upload_routes.py', reloading
+2026-06-07 12:47:33,601 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:47:39,176 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:47:39,177 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:47:39,179 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:47:41,514 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:41,551 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:49:06,414 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:06] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:49:06,958 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:49:06,961 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:49:10,227 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:10] "GET / HTTP/1.1" 200 -
+2026-06-07 12:49:10,275 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:49:10,278 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:49:13,801 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:13] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:49:13,850 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:49:13,852 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:49:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:50:37,526 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:37] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 12:50:37,540 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:50:42,110 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:50:46,439 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:50:50,726 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 12:50:50,729 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:50] "[32mGET /analyze?log_id=1 HTTP/1.1[0m" 302 -
+2026-06-07 12:50:50,770 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:50] "GET /report/1 HTTP/1.1" 200 -
+2026-06-07 12:50:50,819 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:50:50,824 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:50:56,772 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:50:56,796 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:56] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:50:56,837 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:50:56,839 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:50:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:51:09,461 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:51:09] "GET / HTTP/1.1" 200 -
+2026-06-07 12:51:09,494 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:51:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:51:09,499 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:51:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:52:23,544 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\blinker\\base.py', reloading
+2026-06-07 12:52:24,045 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:25,476 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:25,476 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:25,477 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:26,013 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:26,029 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:26,804 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\dotenv\\cli.py', reloading
+2026-06-07 12:52:26,987 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:28,252 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:28,253 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:28,254 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:28,845 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:28,853 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:29,146 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\PIL\\_tkinter_finder.py', reloading
+2026-06-07 12:52:29,266 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:30,631 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:30,632 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:30,632 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:31,201 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:31,208 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:31,275 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\pip\\_internal\\main.py', reloading
+2026-06-07 12:52:31,418 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:32,890 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:32,891 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:32,892 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:33,499 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:33,505 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:33,601 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\pip\\_vendor\\msgpack\\exceptions.py', reloading
+2026-06-07 12:52:33,753 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:35,428 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:35,429 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:35,430 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:36,217 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:36,226 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:36,899 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\pip\\_vendor\\tomli\\_parser.py', reloading
+2026-06-07 12:52:37,152 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:38,934 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:38,935 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:38,935 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:39,868 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:39,881 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:40,162 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\reportlab\\graphics\\barcode\\code128.py', reloading
+2026-06-07 12:52:40,496 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:43,559 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:43,560 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:43,562 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:45,155 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:45,179 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 12:52:45,430 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\requests\\__version__.py', reloading
+2026-06-07 12:52:45,669 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 12:52:47,428 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 12:52:47,429 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 12:52:47,430 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 12:52:48,237 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:52:48,254 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 13:02:51,392 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 13:02:51,395 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 13:02:51,396 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 13:02:54,835 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.162.66:5000
+2026-06-07 13:02:54,837 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 13:02:54,938 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-07 13:03:01,330 - models - INFO - Connecting to MongoDB at: mongodb+srv://gopikakamaraj2004:Gopika@06@pipeline-failure.xhoxgk2.mongodb.net/?appName=Pipeline-failure
+2026-06-07 13:03:01,338 - models - WARNING - Could not connect to live MongoDB server (Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus). Falling back to In-Memory simulation.
+2026-06-07 13:03:01,351 - models - WARNING - Initializing Mock In-Memory Database client.
+2026-06-07 13:03:04,786 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 13:03:04,808 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 13:03:39,368 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:39] "GET / HTTP/1.1" 200 -
+2026-06-07 13:03:40,168 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:03:40,180 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:03:40,516 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 13:03:44,645 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:44] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 13:03:44,739 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:03:44,743 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:03:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:04:01,395 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:04:01] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-07 13:04:01,460 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 13:04:06,287 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 13:04:10,741 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 13:04:15,205 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-07 13:04:15,216 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:04:15] "[32mGET /analyze?log_id=1 HTTP/1.1[0m" 302 -
+2026-06-07 13:04:15,569 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:04:15] "GET /report/1 HTTP/1.1" 200 -
+2026-06-07 13:04:15,820 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:04:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:04:15,857 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:04:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

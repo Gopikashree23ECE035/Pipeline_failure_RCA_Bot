@@ -165,27 +165,35 @@ class OllamaService:
 
         else:
             # AGENT 3 fallback: RCA GENERATOR
-            if "keyerror" in user_prompt_lower or "timestamp" in user_prompt_lower:
-                return {
-                    "root_cause": "The pipeline failed due to a KeyError exception: 'timestamp' in pipeline/handler.py at line 15. This was directly introduced in commit 8c7a2b9f3d1e4e5f6a7b8c9d0e1f2a3b4c5d6e7f ('Refactor dictionary response keys in ETL payload formatting') by dev-engineer-lead. The commit changed the payload mapping keys to use 'ts' instead of 'timestamp', but downstream database loader script still expects the 'timestamp' key, leading to a crash when it tries to extract 'timestamp' from the payload dictionary.",
-                    "confidence_score": "95%",
-                    "severity": "Critical",
-                    "recommendation": "Update the downstream database loader code in etl_job.py to expect 'ts' instead of 'timestamp', or revert the dictionary key change in pipeline/handler.py to maintain backward compatibility.",
-                    "retry_steps": "1. Revert commit 8c7a2b9f or apply hotfix to pipeline/handler.py.\\n2. Run local tests (pytest tests/test_handler.py) to confirm formatting structure.\\n3. Push fix to main repository.\\n4. Trigger pipeline rerun via standard workflow."
-                }
-            elif "connection refused" in user_prompt_lower or "database" in user_prompt_lower:
-                return {
-                    "root_cause": "The ETL job failed to connect to the PostgreSQL instance at localhost:5432. The database service is either down, or firewalled, or connection parameters in the environment configuration were changed, leading to Connection Refused.",
-                    "confidence_score": "90%",
-                    "severity": "High",
-                    "recommendation": "Check if the PostgreSQL database is running on localhost:5432. Verify credentials in environmental configurations and ensure the security group rules allow traffic.",
-                    "retry_steps": "1. Run 'pg_ctl status' or check Docker container status to ensure postgres service is active.\\n2. Verify local connectivity using psql: 'psql -h localhost -U postgres'.\\n3. Restart pipeline worker after confirming database is active."
-                }
+            if "keyerror" in user_prompt_lower or "timestamp" in user_prompt_lower or "uncaught exception" in user_prompt_lower:
+                severity = "Critical"
+                root_cause = (
+                    "The pipeline failed due to a KeyError or unhandled exception in the ETL processing layer. "
+                    "This is a severe runtime failure that causes the pipeline to stop immediately."
+                )
+            elif "connection refused" in user_prompt_lower or "failed to connect" in user_prompt_lower or "database" in user_prompt_lower:
+                severity = "High"
+                root_cause = (
+                    "The ETL job failed to connect to the configured database. "
+                    "The service is unavailable or unreachable, causing the pipeline to fail on startup or during query execution."
+                )
+            elif "warning" in user_prompt_lower or "deprecated" in user_prompt_lower or "slow" in user_prompt_lower or "retry" in user_prompt_lower:
+                severity = "Medium"
+                root_cause = (
+                    "The pipeline execution encountered transient or recoverable issues such as warnings, retries, or performance degradation. "
+                    "These conditions do not indicate an immediate fatal crash, but they still require attention."
+                )
             else:
-                return {
-                    "root_cause": "The pipeline crashed during raw batch processing. Commits show recent changes in files but no obvious correlation. The error points to environment configurations or network latency.",
-                    "confidence_score": "60%",
-                    "severity": "Medium",
-                    "recommendation": "Examine the worker memory profiles and database execution times. Increase execution timeout settings in pipeline configuration.",
-                    "retry_steps": "1. Check server metrics for out of memory (OOM) alerts.\\n2. Clear pipeline temp locks.\\n3. Restart pipeline runner."
-                }
+                severity = "Low"
+                root_cause = (
+                    "The pipeline log indicates a minor issue or informational condition. "
+                    "The failure is likely low-impact and may be caused by a small configuration or environment discrepancy."
+                )
+
+            return {
+                "root_cause": root_cause,
+                "confidence_score": "60%",
+                "severity": severity,
+                "recommendation": "Investigate the reported pipeline condition and apply an appropriate fix based on the log context.",
+                "retry_steps": "1. Review the pipeline output and configuration.\n2. Adjust any environment or connection settings.\n3. Re-run the pipeline after correcting the issue."
+            }
