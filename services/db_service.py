@@ -236,12 +236,18 @@ class DBService:
 
             avg_confidence = f"{round(total_conf / conf_count, 1)}%" if conf_count > 0 else "N/A"
             
-            # Get recent 5 reports
-            recent = db.reports.find(
-                sort=[('created_at', -1)]
-            ).limit(5)
-            
-            recent_reports = [MongoDoc(r) for r in recent]
+            # Get recent 5 reports. Support both PyMongo cursor (with .limit) and mock list returns.
+            recent_cursor = db.reports.find(sort=[('created_at', -1)])
+            try:
+                if hasattr(recent_cursor, 'limit'):
+                    recent_iter = recent_cursor.limit(5)
+                    recent_reports = [MongoDoc(r) for r in recent_iter]
+                else:
+                    recent_list = list(recent_cursor)
+                    recent_reports = [MongoDoc(r) for r in recent_list[:5]]
+            except Exception:
+                recent_list = list(recent_cursor)
+                recent_reports = [MongoDoc(r) for r in recent_list[:5]]
 
             return {
                 "total_reports": total_reports,

@@ -3,3 +3,10 @@
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Generated report PDF successfully
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Background cleanup job finished
 2026-06-06 22:50:27,485 - test - INFO - SUCCESS TEST
+2026-06-07 11:13:46,044 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 1, Second: 2)
+2026-06-07 11:13:48,432 - RCA-MongoDB-Test - INFO - SUCCESS: Ollama connected successfully at http://localhost:11434. Model 'mistral' status verified.
+2026-06-07 11:30:08,999 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 1, Second: 2)
+2026-06-07 11:30:09,000 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 11:30:11,190 - RCA-MongoDB-Test - INFO - SUCCESS: Ollama connected successfully at http://localhost:11434. Model 'mistral' status verified.
+2026-06-07 11:30:11,211 - RCA-MongoDB-Test - INFO - SUCCESS: PDF generated correctly. Compiled size: 2613 bytes.
+2026-06-07 11:30:11,216 - RCA-MongoDB-Test - INFO - === ALL SANITY TESTS COMPLETED SUCCESSFULLY ===
