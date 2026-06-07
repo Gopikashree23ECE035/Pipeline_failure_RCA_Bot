@@ -249,3 +249,683 @@
 2026-06-06 23:30:27,770 - models - WARNING - Initializing Mock In-Memory Database client.
 2026-06-06 23:30:28,935 - werkzeug - WARNING -  * Debugger is active!
 2026-06-06 23:30:28,945 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 00:02:00,171 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 00:02:00,207 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:04,206 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.186:5000
+2026-06-07 00:02:04,206 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 00:02:04,207 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 00:02:04,863 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 00:02:04,891 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:05,211 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 00:02:05,214 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 00:02:32,201 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET / HTTP/1.1" 200 -
+2026-06-07 00:02:32,552 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 00:02:32,625 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 00:02:34,036 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:10:10,462 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:10:10,499 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,655 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:10:10,683 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,687 - RCA-MongoDB-Test - INFO - DB STATUS: Connected to live MongoDB server.
+2026-06-07 12:10:10,688 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 9, Second: 10)
+2026-06-07 12:10:10,695 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:10:10,695 - RCA-MongoDB-Test - INFO - Step 3: Checking Ollama service status...
+2026-06-07 12:10:14,810 - RCA-MongoDB-Test - WARNING - WARNING: Ollama is unreachable at http://localhost:11434. Simulator mode will be used.
+2026-06-07 12:10:14,811 - RCA-MongoDB-Test - INFO - Step 4: Checking PDF generation pipeline...
+2026-06-07 12:10:14,814 - RCA-MongoDB-Test - ERROR - FAILURE: PDF generation compilation crashed. Error details: name 'inch' is not defined
+2026-06-07 12:10:14,815 - RCA-MongoDB-Test - ERROR - === SOME SANITY CHECKS FAILED ===
+2026-06-07 12:11:12,828 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:12,861 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,029 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:13,035 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,037 - RCA-MongoDB-Test - INFO - DB STATUS: Connected to live MongoDB server.
+2026-06-07 12:11:13,039 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 11, Second: 12)
+2026-06-07 12:11:13,043 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:11:13,043 - RCA-MongoDB-Test - INFO - Step 3: Checking Ollama service status...
+2026-06-07 12:11:17,158 - RCA-MongoDB-Test - WARNING - WARNING: Ollama is unreachable at http://localhost:11434. Simulator mode will be used.
+2026-06-07 12:11:17,158 - RCA-MongoDB-Test - INFO - Step 4: Checking PDF generation pipeline...
+2026-06-07 12:11:17,171 - RCA-MongoDB-Test - INFO - SUCCESS: PDF generated correctly. Compiled size: 2613 bytes.
+2026-06-07 12:11:17,172 - RCA-MongoDB-Test - INFO - === ALL SANITY TESTS COMPLETED SUCCESSFULLY ===
+2026-06-07 12:11:51,549 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:51,568 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:52,020 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:11:52,020 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:11:52,022 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:11:52,597 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:11:52,621 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:52,908 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:11:52,911 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:12:16,629 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET / HTTP/1.1" 200 -
+2026-06-07 12:12:16,961 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:12:16,965 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:12:17,882 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:12:19,827 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:12:19,859 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:19,863 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:20,917 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:12:20,952 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:20,955 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:22,143 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:12:22,182 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:22,185 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:26,153 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "GET / HTTP/1.1" 200 -
+2026-06-07 12:12:26,186 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:26,189 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:27,127 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:12:27,163 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:27,166 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:12:29,142 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:12:29,156 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:12:29,186 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:12:29,190 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:12:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:13:53,327 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-07 12:13:53,330 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:13:53,386 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:13:53,390 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:13:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:18:36,125 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\models\\__init__.py', reloading
+2026-06-07 12:18:36,723 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:18:37,375 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:18:37,406 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:18:37,749 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:18:37,753 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:18:55,100 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\services\\db_service.py', reloading
+2026-06-07 12:18:55,704 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:18:56,366 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:18:56,404 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:18:56,863 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:18:56,869 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:19:25,381 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\services\\ollama_service.py', reloading
+2026-06-07 12:19:25,711 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:19:26,388 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:19:26,413 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:19:26,860 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:19:26,863 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:19:52,266 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\services\\github_service.py', reloading
+2026-06-07 12:19:52,609 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:19:53,217 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:19:53,227 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:19:53,543 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:19:53,547 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:20:18,096 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:20:18,172 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:18] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:20:18,508 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:18] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:20:18,572 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:18] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:20:18,633 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:18] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1" 200 -
+2026-06-07 12:20:18,655 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:18] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:20:22,775 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:22] "GET / HTTP/1.1" 200 -
+2026-06-07 12:20:22,822 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:22,825 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:38,329 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:38] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:20:38,370 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:38,372 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:41,527 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:41] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:20:41,562 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:41,566 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:44,159 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:44] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:20:44,199 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:44,200 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:45,678 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:20:45,701 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:45] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:20:45,751 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:45] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:20:45,754 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:45] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:20:45,762 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:20:45] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:22:07,307 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:07,341 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:07] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:22:07,403 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:07] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:22:07,410 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:07] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:22:07,422 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:07] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:22:07,437 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:07] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:22:13,463 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:13] "GET / HTTP/1.1" 200 -
+2026-06-07 12:22:13,502 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:22:13,505 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:22:15,181 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:15] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:22:15,217 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:22:15,220 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:22:16,830 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:16] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:22:16,866 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:22:16,867 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:22:18,432 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:18,455 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:18] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:22:18,488 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:18] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:22:18,490 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:18] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:22:18,499 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:22:18] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:23:53,038 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:23:53,051 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:23:53,403 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:23:53,403 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:23:53,405 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:23:53,923 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:23:53,961 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:23:54,279 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:23:54,284 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:24:56,340 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:56,374 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:56] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:24:56,424 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:56] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:24:56,429 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:56] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:24:56,439 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:56] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:24:56,447 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:56] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,046 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,073 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:24:57,109 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,112 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,123 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,132 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,286 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:24:57,318 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,320 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,327 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,344 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,574 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,604 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:24:57,639 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,640 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,659 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:24:57,672 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:24:57] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:25:00,168 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:25:00,212 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-07 12:25:04,185 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:25:04,201 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:25:04,241 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:25:04,244 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:25:04,257 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:25:04,259 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-06-07 12:25:04,288 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:25:04] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:27:58,853 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:58,882 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:58] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:27:58,926 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:58] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:27:58,929 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:58] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:27:58,955 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:58] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:27:58,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:58] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:27:59,554 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:59,590 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:59] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:27:59,645 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:59] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:27:59,648 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:59] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:27:59,658 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:59] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:27:59,675 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:27:59] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,125 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,145 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:00,182 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,185 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,193 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,208 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,527 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,562 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:00,596 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,599 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,610 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,637 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,666 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,678 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:00,705 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,707 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,726 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,737 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,873 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,894 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:00,944 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,949 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,963 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,979 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:00] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:00,996 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,011 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,036 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,038 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,055 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,146 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,162 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,202 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,205 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,219 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,237 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,288 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,318 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,321 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,340 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,356 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,435 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,447 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,479 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,481 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,489 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,499 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,586 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,599 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,626 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,628 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,638 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,648 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,723 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,738 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:01,765 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,768 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,777 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:01,793 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:01] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,158 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,180 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:02,220 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,222 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,233 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,244 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,303 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,316 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:02,348 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,351 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,362 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,381 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,453 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,471 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:28:02,496 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,503 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,514 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=SA6O0GzT65KcxtZSo9w3 HTTP/1.1[0m" 304 -
+2026-06-07 12:28:02,539 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:28:02] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:28:25,277 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:28:25,314 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:49,241 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:28:49,496 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:28:49,832 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:28:50,083 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:28:50,094 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:50,353 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:28:50,392 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:28:50,396 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:28:50,825 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:28:50,843 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:51,111 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:28:51,115 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:29:42,316 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:29:42,732 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:29:43,036 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:29:43,392 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:29:43,405 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:29:43,519 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:29:43,776 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:29:43,782 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:29:44,089 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:29:44,102 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:29:44,400 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:29:44,404 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:30:00,197 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:30:00,242 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:30:00,563 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:30:00,564 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:30:00,565 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:30:01,093 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:30:01,132 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:30:01,450 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:30:01,454 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:30:06,197 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:06] "GET / HTTP/1.1" 200 -
+2026-06-07 12:30:06,434 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:30:06,434 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:06] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:30:07,341 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:30:10,080 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:10] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:30:10,112 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:10] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:30:10,115 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:10] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:30:10,183 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:30:10] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:33:36,278 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:33:36,293 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:33:36,699 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:33:36,699 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:33:36,700 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:33:37,223 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:33:37,234 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:33:37,569 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:33:37,573 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:34:01,393 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:01] "GET / HTTP/1.1" 200 -
+2026-06-07 12:34:01,481 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:34:01,638 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:01] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:34:03,620 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:34:04,469 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,470 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,494 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:04] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:34:04,556 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:04] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:34:04,880 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:04] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:34:05,244 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:05] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=FkMBxLNJd7ob3iQsJiWs HTTP/1.1" 200 -
+2026-06-07 12:34:05,492 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:34:05] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:35:31,312 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:35:31,345 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:30,027 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:36:30,065 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:46,561 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:36:46,687 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:36:47,169 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:36:47,202 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:36:47,805 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:36:47,816 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:36:47,822 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:47,827 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:48,143 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:36:48,144 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:36:48,148 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:36:48,148 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:37:52,567 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:37:52,902 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:37:52,909 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:37:55,130 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:38:46,840 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:38:46] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:40:09,222 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "GET / HTTP/1.1" 200 -
+2026-06-07 12:40:09,649 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:09,652 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:20,764 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:40:20,849 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:20,851 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:29,894 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:40:29,984 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:29,987 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:31,778 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:40:31,818 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:31,820 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:37,916 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:40:37,971 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:37,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:42,417 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "GET / HTTP/1.1" 200 -
+2026-06-07 12:44:42,470 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:44:42,477 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:46,352 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:44:46,409 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:46,411 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:44:49,213 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "GET / HTTP/1.1" 200 -
+2026-06-07 12:44:49,253 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:44:49,256 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:44:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:22,315 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:46:22,355 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:46:22,358 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:23,220 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:46:23,331 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:46:23,333 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:46:25,515 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,517 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,557 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:46:25,625 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:46:25,634 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:46:25,680 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=q0NmpnUKxOrNpJOJhCTO HTTP/1.1" 200 -
+2026-06-07 12:46:25,896 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:46:25] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:47:21,183 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,184 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,196 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:21] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,698 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:24,720 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:47:24,722 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:47:24,731 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:24] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=q0NmpnUKxOrNpJOJhCTO HTTP/1.1[0m" 304 -
+2026-06-07 12:47:25,789 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:25] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:47:44,803 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:47:44,807 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\routes\\analysis_routes.py', reloading
+2026-06-07 12:47:45,186 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:47:45,195 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:47:45,950 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:47:45,950 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:46,796 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:46,801 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:47:46,812 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:47:46,819 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:47:48,103 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:47:48,103 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:47:49,122 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,123 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,164 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:47:49,515 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:47:49,523 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:47:49,565 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1" 200 -
+2026-06-07 12:47:49,768 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:49] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:47:54,257 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:47:54,258 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:47:54,939 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,940 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,947 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:47:54] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:14,863 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:53:14,864 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,859 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:15,917 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:15,921 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:15] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:16,246 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:16] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1" 200 -
+2026-06-07 12:53:16,980 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:16] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 12:53:21,567 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "GET / HTTP/1.1" 200 -
+2026-06-07 12:53:21,629 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:53:21,950 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:39,648 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:53:39,682 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:39,980 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 12:53:39,981 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 12:53:39,984 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:53:40,489 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:53:40,523 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:40,784 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:53:40,787 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:53:46,306 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "GET / HTTP/1.1" 200 -
+2026-06-07 12:53:46,377 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:46,548 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:48,198 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:53:48,392 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:48,448 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:50,592 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:53:50,660 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:50,819 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:53,815 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:53:53,816 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:53:55,111 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,112 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,141 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:53:55,210 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:53:55,214 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 12:53:55,544 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:53:55] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=ZG7xYskDbuhdM8C51UcG HTTP/1.1[0m" 304 -
+2026-06-07 12:54:27,542 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET / HTTP/1.1" 200 -
+2026-06-07 12:54:27,586 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:54:27,589 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:27] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:54:29,790 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:54:29,790 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:54:29,862 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:54:29,862 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,986 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:30] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:54:31,003 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,004 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,037 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 12:54:31,115 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-07 12:54:31,117 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-07 12:54:31,332 - werkzeug - INFO - 172.16.141.105 - - [07/Jun/2026 12:54:31] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-07 12:56:02,336 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\app.py', reloading
+2026-06-07 12:56:02,547 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\app.py', reloading
+2026-06-07 12:56:02,783 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:03,141 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:03,404 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:03,436 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,718 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:03,763 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,787 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:03,791 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:04,066 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:04,069 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:20,297 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:56:20,872 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:21,047 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\config.py', reloading
+2026-06-07 12:56:21,558 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 12:56:21,626 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:21,639 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:22,214 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:22,224 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:22,461 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:56:22,517 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:22,894 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:56:22,899 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:56:31,715 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 12:56:31,715 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 12:56:34,417 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:56:34,730 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:56:34,732 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:56:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 13:00:12,280 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:00:12,281 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:00:14,076 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:00:14,077 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:00:14,121 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:00:14] "[35m[1mGET /github-analysis HTTP/1.1[0m" 500 -
+2026-06-07 13:00:14,257 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:00:14] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:00:14,261 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:00:14] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-07 13:00:14,271 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:00:14] "GET /github-analysis?__debugger__=yes&cmd=resource&f=console.png&s=lqEeiQ0RNLVtK97MxcEr HTTP/1.1" 200 -
+2026-06-07 13:00:15,341 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:00:15] "[36mGET /github-analysis?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-07 13:01:24,172 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 13:01:24,183 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:24,521 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.105:5000
+2026-06-07 13:01:24,521 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 13:01:24,523 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 13:01:25,057 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 13:01:25,067 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:25,402 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 13:01:25,406 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 13:01:45,658 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\services\\github_service.py', reloading
+2026-06-07 13:01:45,795 - werkzeug - INFO -  * Detected change in 'I:\\github\\Pipeline_failure_RCA_Bot\\services\\github_service.py', reloading
+2026-06-07 13:01:46,198 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 13:01:46,205 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 13:01:46,765 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 13:01:46,772 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 13:01:46,783 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:46,796 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:47,120 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 13:01:47,123 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 13:01:47,124 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 13:01:47,129 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 13:01:47,146 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:01:47,146 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:01:48,050 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:48,051 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:01:48,064 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:48] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:01:50,285 - app - INFO - DEBUG - USING TOKEN: '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'
+2026-06-07 13:01:50,286 - app - INFO - DEBUG - USING REPO: 'Gopikashree23ECE035/Pipeline_failure_RCA_Bot'
+2026-06-07 13:01:51,452 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:51,453 - services.github_service - WARNING - Using mock commits fallback due to API error.
+2026-06-07 13:01:51,457 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 13:01:51,936 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 13:01:51,937 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 13:01:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

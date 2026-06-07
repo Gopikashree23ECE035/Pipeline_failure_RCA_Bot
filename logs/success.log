@@ -3,3 +3,48 @@
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Generated report PDF successfully
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Background cleanup job finished
 2026-06-06 22:50:27,485 - test - INFO - SUCCESS TEST
+2026-06-07 00:02:00,207 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:04,891 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,499 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,683 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:10:10,688 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 9, Second: 10)
+2026-06-07 12:10:10,695 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:11:12,861 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,035 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:13,039 - RCA-MongoDB-Test - INFO - SUCCESS: Auto-increment sequence generator verified. (First: 11, Second: 12)
+2026-06-07 12:11:13,043 - RCA-MongoDB-Test - INFO - SUCCESS: Statistics collection query verified. Existing reports: 0, Logs: 0
+2026-06-07 12:11:17,171 - RCA-MongoDB-Test - INFO - SUCCESS: PDF generated correctly. Compiled size: 2613 bytes.
+2026-06-07 12:11:17,172 - RCA-MongoDB-Test - INFO - === ALL SANITY TESTS COMPLETED SUCCESSFULLY ===
+2026-06-07 12:11:51,568 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:11:52,621 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:18:37,406 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:18:56,404 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:19:26,413 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:19:53,227 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:23:53,051 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:23:53,961 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:25,314 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:50,094 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:28:50,843 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:29:43,405 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:29:44,102 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:30:00,242 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:30:01,132 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:33:36,293 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:33:37,234 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:35:31,345 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:30,065 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:47,822 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:47,827 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:47:45,968 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:39,682 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:53:40,523 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,436 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:03,763 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:21,639 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:56:22,517 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:24,183 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:25,067 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:46,783 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 13:01:46,796 - models - INFO - Successfully connected to live MongoDB server.

@@ -97,6 +97,8 @@ def github_analysis_view():
         token=current_app.config['GITHUB_TOKEN'],
         repo=current_app.config['GITHUB_REPO']
     )
+    current_app.logger.info(f"DEBUG - USING TOKEN: {repr(current_app.config['GITHUB_TOKEN'])}")
+    current_app.logger.info(f"DEBUG - USING REPO: {repr(current_app.config['GITHUB_REPO'])}")
     commits = gh_service.fetch_recent_commits(limit=5)
     is_live = gh_service.is_configured()
     

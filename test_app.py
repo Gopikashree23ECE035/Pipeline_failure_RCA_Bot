@@ -60,9 +60,10 @@ def verify_ollama():
     ollama = OllamaService(Config.OLLAMA_API_URL, Config.OLLAMA_MODEL)
     if ollama.check_connection():
         logger.info(f"SUCCESS: Ollama connected successfully at {Config.OLLAMA_API_URL}. Model '{Config.OLLAMA_MODEL}' status verified.")
+        return True
     else:
-        logger.warning(f"OFFLINE: Ollama is unreachable at {Config.OLLAMA_API_URL}. AI analysis will run in local rule-based simulation fallback mode.")
-    return True
+        logger.warning(f"WARNING: Ollama is unreachable at {Config.OLLAMA_API_URL}. Simulator mode will be used.")
+        return True
 
 def verify_pdf():
     logger.info("Step 4: Checking PDF generation pipeline...")
