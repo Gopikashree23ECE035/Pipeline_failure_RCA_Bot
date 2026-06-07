@@ -625,3 +625,30 @@
 2026-06-07 12:36:47,169 - werkzeug - INFO -  * Restarting with stat
 2026-06-07 12:36:47,202 - werkzeug - INFO -  * Restarting with stat
 2026-06-07 12:36:47,805 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:36:47,816 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 12:36:47,822 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:47,827 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 12:36:48,143 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:36:48,144 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 12:36:48,148 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:36:48,148 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 12:37:52,567 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:37:52,902 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 12:37:52,909 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:52] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 12:37:55,130 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:37:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-07 12:38:46,840 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:38:46] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:40:09,222 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "GET / HTTP/1.1" 200 -
+2026-06-07 12:40:09,649 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:09,652 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:20,764 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:40:20,849 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:20,851 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:29,894 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "GET /history HTTP/1.1" 200 -
+2026-06-07 12:40:29,984 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:29,987 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:31,778 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "GET /upload-log HTTP/1.1" 200 -
+2026-06-07 12:40:31,818 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:31,820 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-07 12:40:37,916 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-07 12:40:37,971 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-07 12:40:37,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 12:40:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
