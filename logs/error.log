@@ -20,3 +20,47 @@
 2026-06-06 23:03:46,250 - __main__ - ERROR - Failed to get dashboard statistics: 'list' object has no attribute 'limit'
 2026-06-07 12:10:14,814 - RCA-MongoDB-Test - ERROR - FAILURE: PDF generation compilation crashed. Error details: name 'inch' is not defined
 2026-06-07 12:10:14,815 - RCA-MongoDB-Test - ERROR - === SOME SANITY CHECKS FAILED ===
+2026-06-07 12:20:18,096 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:20:45,678 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:07,307 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:18,432 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:56,340 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,046 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,574 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:25:04,185 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:58,853 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:59,554 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,125 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,527 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,666 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,873 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,996 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,146 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,435 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,586 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,723 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,158 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,303 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,453 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,469 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,470 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}

@@ -1,8 +1,9 @@
 import os
+# pyrefly: ignore [missing-import]
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv(override=True)
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
