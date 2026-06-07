@@ -3,3 +3,5 @@
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Generated report PDF successfully
 2026-06-06 22:39:30 - test_success - INFO - SUCCESS: Background cleanup job finished
 2026-06-06 22:50:27,485 - test - INFO - SUCCESS TEST
+2026-06-07 00:02:00,207 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:04,891 - models - INFO - Successfully connected to live MongoDB server.

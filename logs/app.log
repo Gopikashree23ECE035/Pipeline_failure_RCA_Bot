@@ -249,3 +249,19 @@
 2026-06-06 23:30:27,770 - models - WARNING - Initializing Mock In-Memory Database client.
 2026-06-06 23:30:28,935 - werkzeug - WARNING -  * Debugger is active!
 2026-06-06 23:30:28,945 - werkzeug - INFO -  * Debugger PIN: 789-137-169
+2026-06-07 00:02:00,171 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 00:02:00,207 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:04,206 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.186:5000
+2026-06-07 00:02:04,206 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-07 00:02:04,207 - werkzeug - INFO -  * Restarting with stat
+2026-06-07 00:02:04,863 - models - INFO - Connecting to MongoDB at: mongodb://localhost:27017/Pipeline_Bot
+2026-06-07 00:02:04,891 - models - INFO - Successfully connected to live MongoDB server.
+2026-06-07 00:02:05,211 - werkzeug - WARNING -  * Debugger is active!
+2026-06-07 00:02:05,214 - werkzeug - INFO -  * Debugger PIN: 315-838-488
+2026-06-07 00:02:32,201 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET / HTTP/1.1" 200 -
+2026-06-07 00:02:32,552 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-07 00:02:32,625 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:32] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-07 00:02:34,036 - werkzeug - INFO - 127.0.0.1 - - [07/Jun/2026 00:02:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
