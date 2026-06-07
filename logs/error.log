@@ -154,3 +154,23 @@
   "documentation_url": "https://docs.github.com/rest",
   "status": "401"
 }
+2026-06-07 13:00:14,076 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:00:14,077 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:48,050 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:51,452 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
