@@ -1,3 +1,206 @@
+<<<<<<< HEAD
+2026-06-06 22:36:59,859 - test_logger - ERROR - ERROR test message
+2026-06-06 22:39:30 - test_error - ERROR - ERROR: Failed to connect to downstream service
+2026-06-06 22:39:30 - test_error - ERROR - ERROR: Unexpected response format in API payload
+2026-06-06 22:39:30 - test_error - ERROR - ERROR: Database transaction aborted due to timeout
+2026-06-06 22:44:59,913 - services.db_service - ERROR - Error saving log to MongoDB: 'NoneType' object has no attribute 'counters'
+2026-06-06 22:48:14,964 - services.db_service - ERROR - Error saving log to MongoDB: 'NoneType' object has no attribute 'counters'
+2026-06-06 22:50:27,483 - test - ERROR - TEST ERROR
+2026-06-06 22:54:12,024 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:15,045 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:16,719 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:16,812 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:16,963 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:19,255 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:21,218 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:21,281 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:21,368 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:23,624 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:25,586 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 22:54:25,772 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
+2026-06-06 23:03:46,250 - __main__ - ERROR - Failed to get dashboard statistics: 'list' object has no attribute 'limit'
+2026-06-07 12:10:14,814 - RCA-MongoDB-Test - ERROR - FAILURE: PDF generation compilation crashed. Error details: name 'inch' is not defined
+2026-06-07 12:10:14,815 - RCA-MongoDB-Test - ERROR - === SOME SANITY CHECKS FAILED ===
+2026-06-07 12:20:18,096 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:20:45,678 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:07,307 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:22:18,432 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:56,340 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,046 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:24:57,574 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:25:04,185 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:58,853 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:27:59,554 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,125 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,527 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,666 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,873 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:00,996 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,146 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,273 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,435 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,586 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:01,723 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,158 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,303 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:28:02,453 - services.github_service - ERROR - GitHub integration not fully configured. Missing token or repo.
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:30:10,061 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,469 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:34:04,470 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,515 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:46:25,517 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,183 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:21,184 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:24,682 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,122 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:49,123 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,939 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:47:54,940 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:15,840 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,111 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:53:55,112 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:30,951 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,003 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 12:54:31,004 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:00:14,076 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:00:14,077 - services.github_service - ERROR - Error connecting to GitHub API: GitHub API Error: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:48,050 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:01:51,452 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:02:38,746 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:07:40,764 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:11:50,564 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:12:00,358 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+2026-06-07 13:14:51,728 - services.github_service - ERROR - Failed to fetch commits from GitHub (Status 401): {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
+=======
 2026-06-06 22:36:59,859 - test_logger - ERROR - ERROR test message
 2026-06-06 22:39:30 - test_error - ERROR - ERROR: Failed to connect to downstream service
 2026-06-06 22:39:30 - test_error - ERROR - ERROR: Unexpected response format in API payload
@@ -86,3 +289,4 @@
 2026-06-07 14:50:44,821 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
 2026-06-07 14:50:49,138 - services.ollama_service - ERROR - Ollama returned error status 500: {"error":"error starting llama-server: llama-server binary not found (checked: C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\build\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows-amd64\\lib\\ollama\\llama-server.exe, C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Ollama\\dist\\windows_amd64\\lib\\ollama\\llama-server.exe). Run 'cmake -S llama/server --preset cpu \u0026\u0026 cmake --build --preset cpu' first "}
 >>>>>>> Stashed changes
+>>>>>>> c5bb7b4bbe81815e9526fdcb561fb540488aae2f
