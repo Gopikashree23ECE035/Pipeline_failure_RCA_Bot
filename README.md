@@ -4,7 +4,6 @@
 
   [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
   [![Flask](https://img.shields.io/badge/Flask-3.0.2-lightgrey.svg)](https://flask.palletsprojects.com/)
-  [![MongoDB](https://img.shields.io/badge/MongoDB-4.6+-green.svg)](https://www.mongodb.com/)
   [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)](https://www.postgresql.org/)
   [![Ollama](https://img.shields.io/badge/Ollama-Mistral-orange.svg)](https://ollama.com/)
   [![License](https://img.shields.io/badge/License-MIT-purple.svg)](#license)
