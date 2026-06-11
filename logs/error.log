@@ -104,3 +104,6 @@ connection to server at "ep-plain-surf-ap2nx3w7-pooler.c-7.us-east-1.aws.neon.te
 2026-06-09 18:54:02,967 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
 2026-06-09 18:54:54,062 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
 2026-06-09 18:55:46,045 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:46:35,655 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:47:25,900 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:48:16,602 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)

@@ -1,190 +1,337 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="row align-items-center mb-4">
-    <div class="col-12">
-        <h1 class="text-white fw-bold mb-1">Upload Pipeline Logs</h1>
-        <p class="text-secondary mb-0">Upload failed logs to run root-cause analysis or historical successful logs for comparison.</p>
+
+<!-- Page Header -->
+<div class="page-header fade-in-up d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div>
+        <h1>Upload <span class="gradient-text">Pipeline Logs</span></h1>
+        <p>Upload failed logs for root-cause analysis or successful logs for baseline comparison.</p>
     </div>
+    <a href="{{ url_for('report.history') }}" class="btn btn-outline-light px-4">
+        <i class="bi bi-journal-text me-2"></i>View History
+    </a>
 </div>
 
 <div class="row g-4 justify-content-center">
-    <div class="col-lg-6">
+
+    <!-- ── Upload Form Card ── -->
+    <div class="col-lg-6 fade-in-up fade-in-up-delay-1">
         <div class="glass-card">
-            <h3 class="text-white h5 mb-4 fw-bold"><i class="bi bi-file-earmark-arrow-up text-primary me-2"></i>Select Log File</h3>
-            
-            <form action="{{ url_for('upload.upload_log') }}" method="POST" enctype="multipart/form-data">
+            <div class="card-heading">
+                <span class="card-heading-icon icon-primary"><i class="bi bi-cloud-arrow-up-fill"></i></span>
+                Select Log File
+            </div>
+
+            <form action="{{ url_for('upload.upload_log') }}" method="POST"
+                  enctype="multipart/form-data" id="upload-form" novalidate>
+
                 <!-- Log Type Selection -->
                 <div class="mb-4">
-                    <label class="form-label text-secondary small fw-semibold">Log File Classification</label>
+                    <label class="d-block mb-2" style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);">
+                        Log Classification
+                    </label>
                     <div class="row g-3">
                         <div class="col-6">
-                            <input type="radio" class="btn-check" name="log_type" id="log_failure" value="failure" checked>
-                            <label class="btn btn-outline-light w-100 py-3 d-flex flex-column align-items-center gap-2 border-opacity-25" for="log_failure">
-                                <i class="bi bi-x-circle-fill text-danger fs-4"></i>
-                                <span>Failed Log</span>
+                            <label class="log-type-option d-block">
+                                <input type="radio" name="log_type" value="failure" checked id="log_failure">
+                                <span class="log-type-card">
+                                    <span class="type-icon"><i class="bi bi-x-circle-fill" style="color:#fb7185;"></i></span>
+                                    <span class="d-block" style="font-size:0.875rem;">Failed Log</span>
+                                    <span class="d-block text-secondary" style="font-size:0.75rem;font-weight:400;">Triggers RCA</span>
+                                </span>
                             </label>
                         </div>
                         <div class="col-6">
-                            <input type="radio" class="btn-check" name="log_type" id="log_success" value="success">
-                            <label class="btn btn-outline-light w-100 py-3 d-flex flex-column align-items-center gap-2 border-opacity-25" for="log_success">
-                                <i class="bi bi-check-circle-fill text-success fs-4"></i>
-                                <span>Successful Log</span>
+                            <label class="log-type-option d-block">
+                                <input type="radio" name="log_type" value="success" id="log_success">
+                                <span class="log-type-card">
+                                    <span class="type-icon"><i class="bi bi-check-circle-fill" style="color:#34d399;"></i></span>
+                                    <span class="d-block" style="font-size:0.875rem;">Success Log</span>
+                                    <span class="d-block text-secondary" style="font-size:0.75rem;font-weight:400;">Baseline ref</span>
+                                </span>
                             </label>
                         </div>
                     </div>
                 </div>
 
-                <!-- Drag & Drop Upload Zone -->
+                <!-- Drag & Drop Zone -->
                 <div class="mb-4">
-                    <label class="form-label text-secondary small fw-semibold">Upload Log Document</label>
-                    <div id="upload-zone" class="upload-zone">
-                        <i class="bi bi-cloud-arrow-up-fill upload-icon"></i>
-                        <h5>Drag & Drop your log file here</h5>
-                        <p class="text-secondary small mb-0">Supports .log or .txt files (max 10MB)</p>
+                    <label class="d-block mb-2" style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);">
+                        Log Document
+                    </label>
+
+                    <div id="upload-zone" class="upload-zone" role="button" tabindex="0"
+                         aria-label="Click or drag and drop your log file here">
+                        <i class="bi bi-cloud-arrow-up-fill upload-icon" id="upload-zone-icon"></i>
+                        <h5 id="upload-zone-title" style="font-size:1rem;font-weight:700;margin-bottom:6px;">
+                            Drag &amp; Drop your log file here
+                        </h5>
+                        <p class="text-secondary mb-2" id="upload-zone-subtitle" style="font-size:0.8rem;">
+                            or click to browse your files
+                        </p>
+                        <span class="badge" style="background:rgba(79,70,229,0.07);color:var(--text-muted);font-size:0.72rem;padding:4px 10px;border-radius:20px;border:1px solid var(--border);">
+                            .log &nbsp;·&nbsp; .txt &nbsp;·&nbsp; max 10 MB
+                        </span>
                     </div>
-                    <input type="file" name="log_file" id="log_file" accept=".log,.txt" class="d-none" required>
-                    <!-- File Selected Display -->
-                    <div id="file-selected" class="mt-3 p-3 bg-success bg-opacity-10 border border-success border-opacity-25 rounded d-none">
-                        <div class="d-flex align-items-center gap-2">
-                            <i class="bi bi-file-earmark-check text-success fs-5"></i>
-                            <div>
-                                <p class="text-success fw-semibold mb-1">File Selected</p>
-                                <p class="text-secondary small mb-0" id="file-name"></p>
-                            </div>
+
+                    <!-- Hidden file input — ONLY triggered by JS below, not by zone's own click -->
+                    <input type="file" name="log_file" id="log_file"
+                           accept=".log,.txt" class="d-none" required>
+
+                    <!-- File Selected Indicator -->
+                    <div id="file-selected-info" class="d-none mt-3 p-3 rounded d-flex align-items-center gap-3"
+                         style="background:rgba(79,70,229,0.08);border:1px solid rgba(79,70,229,0.2);">
+                        <i class="bi bi-file-earmark-check-fill fs-4" style="color:var(--primary);flex-shrink:0;"></i>
+                        <div class="flex-grow-1 overflow-hidden">
+                            <div style="font-weight:700;font-size:0.875rem;color:var(--primary);">File Selected</div>
+                            <div id="file-name-display" style="font-size:0.8rem;color:var(--text-secondary);" class="text-truncate"></div>
                         </div>
+                        <button type="button" id="clear-file-btn" class="btn btn-sm"
+                                style="padding:4px 8px;border:1px solid var(--border);color:var(--text-muted);border-radius:6px;background:transparent;">
+                            <i class="bi bi-x"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Action Button -->
-                <button type="submit" id="submit-btn" class="btn btn-primary w-100 py-2.5 fw-semibold" disabled>
-                    <i class="bi bi-cloud-arrow-up me-1"></i> Upload and Register Log
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn"
+                        class="btn btn-gradient w-100 py-2 mt-2" disabled>
+                    <i class="bi bi-cloud-arrow-up me-2"></i>
+                    <span id="submit-btn-text">Upload &amp; Register Log</span>
                 </button>
-                <small id="file-required-hint" class="text-warning d-block mt-2 text-center">Select a file to enable upload</small>
+                <p id="file-hint" class="text-center mt-2 mb-0"
+                   style="font-size:0.78rem;color:var(--text-muted);">
+                    Select a file above to enable upload
+                </p>
+
             </form>
         </div>
     </div>
 
-    <!-- Upload Instructions and Tips -->
-    <div class="col-lg-5">
+    <!-- ── Instructions Card ── -->
+    <div class="col-lg-5 fade-in-up fade-in-up-delay-2">
         <div class="glass-card h-100">
-            <h3 class="text-white h5 mb-3 fw-bold"><i class="bi bi-lightbulb text-primary me-2"></i>Analysis Recommendations</h3>
-            
-            <div class="d-flex flex-column gap-3 text-secondary small mt-3">
-                <div class="d-flex gap-3 align-items-start">
-                    <div class="text-primary fs-4"><i class="bi bi-1-circle"></i></div>
+            <div class="card-heading">
+                <span class="card-heading-icon icon-warning"><i class="bi bi-lightbulb-fill"></i></span>
+                How It Works
+            </div>
+
+            <div class="d-flex flex-column gap-4">
+
+                <div class="step-item">
+                    <div class="step-number">1</div>
                     <div>
-                        <h6 class="text-white fw-bold mb-1">Step 1: Upload a Successful Log</h6>
-                        <p>Providing the most recent successful pipeline execution log helps the AI RCA Generator isolate environmental variances and configuration deltas.</p>
-                    </div>
-                </div>
-                
-                <hr class="border-secondary border-opacity-25 my-1">
-                
-                <div class="d-flex gap-3 align-items-start">
-                    <div class="text-primary fs-4"><i class="bi bi-2-circle"></i></div>
-                    <div>
-                        <h6 class="text-white fw-bold mb-1">Step 2: Upload the Failed Log</h6>
-                        <p>Select "Failed Log", drop the execution log containing stack traces, database exceptions, or output dumps, and upload it.</p>
+                        <h6 class="fw-bold mb-1" style="font-size:0.9rem;">Upload a Success Log</h6>
+                        <p class="text-secondary small mb-0" style="line-height:1.65;">
+                            Select <strong style="color:var(--text-primary);">Success Log</strong> and upload the most recent successful pipeline execution log. This gives the AI a baseline to compare against.
+                        </p>
                     </div>
                 </div>
 
-                <hr class="border-secondary border-opacity-25 my-1">
+                <div style="height:1px;background:var(--border);"></div>
 
-                <div class="d-flex gap-3 align-items-start">
-                    <div class="text-primary fs-4"><i class="bi bi-3-circle"></i></div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
                     <div>
-                        <h6 class="text-white fw-bold mb-1">Step 3: Trigger the Analysis Loop</h6>
-                        <p>Once both files are registered, our multi-agent model loop fetches GitHub commits and automatically identifies which changes introduced the bug.</p>
+                        <h6 class="fw-bold mb-1" style="font-size:0.9rem;">Upload the Failed Log</h6>
+                        <p class="text-secondary small mb-0" style="line-height:1.65;">
+                            Select <strong style="color:var(--text-primary);">Failed Log</strong>, then drop the execution log containing stack traces, exceptions, or output dumps.
+                        </p>
                     </div>
+                </div>
+
+                <div style="height:1px;background:var(--border);"></div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h6 class="fw-bold mb-1" style="font-size:0.9rem;">AI Analysis Runs Automatically</h6>
+                        <p class="text-secondary small mb-0" style="line-height:1.65;">
+                            After uploading a failure log, the multi-agent model loop fetches recent GitHub commits, correlates code diffs, and produces a detailed RCA report.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supported formats -->
+            <div class="mt-4 pt-4" style="border-top:1px solid var(--border);">
+                <div class="d-block mb-2" style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);">
+                    Supported Formats
+                </div>
+                <div class="d-flex gap-2">
+                    <span class="badge font-mono" style="background:rgba(99,102,241,0.12);color:var(--primary-light);border:1px solid rgba(99,102,241,0.2);padding:5px 12px;font-size:0.8rem;">.log</span>
+                    <span class="badge font-mono" style="background:rgba(99,102,241,0.12);color:var(--primary-light);border:1px solid rgba(99,102,241,0.2);padding:5px 12px;font-size:0.8rem;">.txt</span>
+                    <span class="badge" style="background:rgba(255,255,255,0.04);color:var(--text-muted);border:1px solid var(--border);padding:5px 12px;font-size:0.8rem;">Max 10 MB</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Upload Progress Overlay -->
+<div id="upload-overlay" class="analysis-overlay d-none">
+    <div class="analysis-overlay-inner">
+        <div class="spinner-pulse mb-4">
+            <i class="bi bi-cloud-arrow-up" style="font-size:26px;color:var(--primary-light);position:relative;z-index:1;"></i>
+        </div>
+        <h3 class="fw-bold mb-2" style="font-size:1.3rem;">Uploading &amp; Processing Log</h3>
+        <p class="text-secondary small mb-4" id="upload-status-text">Saving log file to database…</p>
+        <div class="progress-custom" style="width:320px;max-width:100%;margin:0 auto;">
+            <div class="progress-fill" id="upload-progress-bar"
+                 style="width:15%;background:linear-gradient(90deg,var(--primary),var(--accent-purple));"></div>
+        </div>
+        <p class="text-secondary mt-3" style="font-size:0.78rem;">Please do not close this window.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const fileInput = document.getElementById('log_file');
-    const uploadZone = document.getElementById('upload-zone');
-    const fileSelectedDiv = document.getElementById('file-selected');
-    const fileNameSpan = document.getElementById('file-name');
-    const submitBtn = document.getElementById('submit-btn');
-    const fileRequiredHint = document.getElementById('file-required-hint');
-    const form = document.querySelector('form');
+    const fileInput    = document.getElementById('log_file');
+    const uploadZone   = document.getElementById('upload-zone');
+    const selectedInfo = document.getElementById('file-selected-info');
+    const fileNameDisp = document.getElementById('file-name-display');
+    const submitBtn    = document.getElementById('submit-btn');
+    const submitText   = document.getElementById('submit-btn-text');
+    const fileHint     = document.getElementById('file-hint');
+    const clearBtn     = document.getElementById('clear-file-btn');
+    const form         = document.getElementById('upload-form');
+    const zoneIcon     = document.getElementById('upload-zone-icon');
+    const zoneTitle    = document.getElementById('upload-zone-title');
+    const zoneSub      = document.getElementById('upload-zone-subtitle');
 
-    // Update button state
-    function updateButtonState() {
-        if (fileInput.files.length > 0) {
+    // ── File state update ──────────────────────────────────────
+    function updateFileState() {
+        if (fileInput.files && fileInput.files.length > 0) {
             const file = fileInput.files[0];
-            fileNameSpan.textContent = `${file.name} - ${(file.size / 1024).toFixed(2)} KB`;
-            fileSelectedDiv.classList.remove('d-none');
+            const sizeStr = file.size < 1024 * 1024
+                ? (file.size / 1024).toFixed(1) + ' KB'
+                : (file.size / (1024 * 1024)).toFixed(2) + ' MB';
+
+            fileNameDisp.textContent = file.name + '  (' + sizeStr + ')';
+            selectedInfo.classList.remove('d-none');
+
+            // Transform the zone to "loaded" state
+            uploadZone.classList.add('file-loaded');
+            zoneIcon.className = 'bi bi-file-earmark-check-fill upload-icon';
+            zoneTitle.textContent = file.name;
+            zoneSub.textContent   = sizeStr + ' · Click to replace';
+
             submitBtn.disabled = false;
-            submitBtn.classList.add('btn-success');
-            submitBtn.classList.remove('btn-primary', 'disabled');
-            submitBtn.innerHTML = '<i class="bi bi-check-circle me-1"></i> Submit and Analyze';
-            fileRequiredHint.classList.add('d-none');
+            submitText.textContent = 'Upload & Analyze Log';
+            fileHint.classList.add('d-none');
         } else {
-            fileSelectedDiv.classList.add('d-none');
-            submitBtn.disabled = true;
-            submitBtn.classList.remove('btn-success');
-            submitBtn.classList.add('btn-primary', 'disabled');
-            submitBtn.innerHTML = '<i class="bi bi-cloud-arrow-up me-1"></i> Upload and Register Log';
-            fileRequiredHint.classList.remove('d-none');
+            resetZone();
         }
     }
 
-    // Monitor file input changes
-    fileInput.addEventListener('change', updateButtonState);
+    function resetZone() {
+        fileInput.value = '';
+        selectedInfo.classList.add('d-none');
+        uploadZone.classList.remove('file-loaded');
+        zoneIcon.className   = 'bi bi-cloud-arrow-up-fill upload-icon';
+        zoneTitle.textContent = 'Drag & Drop your log file here';
+        zoneSub.textContent   = 'or click to browse your files';
+        submitBtn.disabled   = true;
+        submitText.textContent = 'Upload & Register Log';
+        fileHint.classList.remove('d-none');
+    }
 
-    // Click upload zone to trigger file input
+    // Listen for file selection
+    fileInput.addEventListener('change', updateFileState);
+
+    // ── Zone click → open file picker (SINGLE handler only here) ──
     uploadZone.addEventListener('click', function() {
         fileInput.click();
     });
 
-    // Drag and drop functionality
+    // Keyboard accessibility for the zone
+    uploadZone.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            fileInput.click();
+        }
+    });
+
+    // Clear file button
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // don't re-open picker
+            resetZone();
+        });
+    }
+
+    // ── Drag & Drop ────────────────────────────────────────────
     uploadZone.addEventListener('dragover', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        uploadZone.style.backgroundColor = 'rgba(13, 110, 253, 0.1)';
-        uploadZone.style.borderColor = '#0d6efd';
+        uploadZone.classList.add('drag-over');
     });
 
     uploadZone.addEventListener('dragleave', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        uploadZone.style.backgroundColor = '';
-        uploadZone.style.borderColor = '';
+        uploadZone.classList.remove('drag-over');
     });
 
     uploadZone.addEventListener('drop', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        uploadZone.style.backgroundColor = '';
-        uploadZone.style.borderColor = '';
-        
+        uploadZone.classList.remove('drag-over');
+
         const files = e.dataTransfer.files;
         if (files && files.length > 0) {
-            // Create a DataTransfer object to properly set files
-            const dataTransfer = new DataTransfer();
-            dataTransfer.items.add(files[0]);
-            fileInput.files = dataTransfer.files;
-            // Trigger change event
+            const dt = new DataTransfer();
+            dt.items.add(files[0]);
+            fileInput.files = dt.files;
             fileInput.dispatchEvent(new Event('change', { bubbles: true }));
         }
     });
 
-    // Form submission handler
+    // ── Form Submit → show loading overlay ─────────────────────
     form.addEventListener('submit', function(e) {
         if (!fileInput.files || fileInput.files.length === 0) {
             e.preventDefault();
-            alert('Please select a log file before submitting.');
+            uploadZone.style.borderColor = 'rgba(244,63,94,0.5)';
+            uploadZone.style.background  = 'rgba(244,63,94,0.05)';
+            setTimeout(() => {
+                uploadZone.style.borderColor = '';
+                uploadZone.style.background  = '';
+            }, 1500);
             return false;
         }
-        
-        // Show loading state
+
+        // Show upload overlay immediately
+        const overlay  = document.getElementById('upload-overlay');
+        const statusEl = document.getElementById('upload-status-text');
+        const bar      = document.getElementById('upload-progress-bar');
+
+        overlay.classList.remove('d-none');
+
+        // Disable submit to prevent double submission
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i> Uploading...';
+
+        const messages = [
+            'Saving log file to database…',
+            'Registering log entry…',
+            'Initialising AI agent pipeline…',
+            'Please wait, analysing log content…'
+        ];
+        let msgIdx = 0;
+        let progress = 15;
+
+        const interval = setInterval(() => {
+            progress = Math.min(progress + 18, 85);
+            bar.style.width = progress + '%';
+            if (msgIdx < messages.length - 1) {
+                statusEl.textContent = messages[++msgIdx];
+            }
+        }, 1800);
+
+        // Let form submit naturally (server will redirect after done)
         return true;
     });
 });

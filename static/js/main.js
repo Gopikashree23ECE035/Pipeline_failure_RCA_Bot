@@ -1,110 +1,84 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // 1. File Upload styling and input update
-    const fileInput = document.getElementById('log_file');
-    const uploadZone = document.getElementById('upload-zone');
-    
-    if (fileInput && uploadZone) {
-        // Trigger file select on click
-        uploadZone.addEventListener('click', () => fileInput.click());
+/**
+ * main.js — Pipeline RCA Bot
+ * Global JS: navbar scroll effect, diff syntax highlighting.
+ * NOTE: Upload zone interaction is handled fully inside upload.html
+ *       to avoid duplicate event handlers causing double file dialogs.
+ */
 
-        // Update display on file select
-        fileInput.addEventListener('change', function(e) {
-            if (this.files && this.files.length > 0) {
-                const filename = this.files[0].name;
-                const sizeKB = (this.files[0].size / 1024).toFixed(1);
-                
-                uploadZone.innerHTML = `
-                    <i class="bi bi-file-earmark-text-fill upload-icon text-primary"></i>
-                    <h4>${filename}</h4>
-                    <p class="text-secondary small">${sizeKB} KB - Click to replace file</p>
-                `;
-            }
-        });
+document.addEventListener('DOMContentLoaded', function () {
 
-        // Drag & drop handlers
-        ['dragenter', 'dragover'].forEach(eventName => {
-            uploadZone.addEventListener(eventName, (e) => {
-                e.preventDefault();
-                uploadZone.style.borderColor = '#3b82f6';
-                uploadZone.style.background = 'rgba(59, 130, 246, 0.08)';
-            }, false);
-        });
-
-        ['dragleave', 'drop'].forEach(eventName => {
-            uploadZone.addEventListener(eventName, (e) => {
-                e.preventDefault();
-                uploadZone.style.borderColor = 'rgba(255, 255, 255, 0.15)';
-                uploadZone.style.background = 'rgba(255, 255, 255, 0.02)';
-            }, false);
-        });
-
-        uploadZone.addEventListener('drop', function(e) {
-            const dt = e.dataTransfer;
-            const files = dt.files;
-            if (files && files.length > 0) {
-                fileInput.files = files;
-                // Dispatch change event to update text
-                const event = new Event('change');
-                fileInput.dispatchEvent(event);
-            }
-        });
+    // ── 1. Navbar scroll effect ────────────────────────────────
+    const nav = document.getElementById('mainNav');
+    if (nav) {
+        window.addEventListener('scroll', function () {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        }, { passive: true });
     }
 
-    // 2. Loading State Overlay for Analysis Action
-    const analyzeBtn = document.getElementById('start-analysis-btn');
-    const analyzeOverlay = document.getElementById('analysis-loading-overlay');
-    
-    if (analyzeBtn && analyzeOverlay) {
-        analyzeBtn.addEventListener('click', function(e) {
-            analyzeOverlay.classList.remove('d-none');
-            
-            // Cycle through agent loading messages to look realistic
-            const statusText = document.getElementById('loading-status-text');
-            const statuses = [
-                "Agent 1: Fetching failed pipeline logs...",
-                "Agent 1: Extracting error messages and stack traces...",
-                "Agent 2: Contacting GitHub REST API...",
-                "Agent 2: Analysing recent commits and diff changes...",
-                "Agent 2: Correlating code changes with log errors...",
-                "Agent 3: Loading historical successful logs...",
-                "Agent 3: Generating final Root Cause report...",
-                "Agent 3: Formulating retry & resolution steps..."
-            ];
-            
-            let idx = 0;
-            const interval = setInterval(() => {
-                if (idx < statuses.length - 1) {
-                    idx++;
-                    if (statusText) {
-                        statusText.textContent = statuses[idx];
-                    }
-                } else {
-                    clearInterval(interval);
-                }
-            }, 3000);
-        });
-    }
+    // ── 2. Diff syntax highlighting (shared across pages) ─────
+    //    upload.html, report.html and github_analysis.html all
+    //    render .raw-diff blocks. Each page also calls this on
+    //    its own, but this global handler acts as a safety net.
+    highlightDiffs();
 
-    // 3. Highlight Diffs in page if present
-    const diffBlocks = document.querySelectorAll('.raw-diff');
-    diffBlocks.forEach(block => {
-        const text = block.textContent;
-        const lines = text.split('\n');
-        let htmlLines = '';
-        
-        lines.forEach(line => {
-            if (line.startsWith('+') && !line.startsWith('+++')) {
-                htmlLines += `<span class="diff-line-added">${escapeHTML(line)}</span>`;
-            } else if (line.startsWith('-') && !line.startsWith('---')) {
-                htmlLines += `<span class="diff-line-removed">${escapeHTML(line)}</span>`;
-            } else {
-                htmlLines += `<span>${escapeHTML(line)}</span>\n`;
+    // ── 3. Auto-dismiss flash alerts after 6 s ─────────────────
+    document.querySelectorAll('.flash-alert').forEach(el => {
+        setTimeout(() => {
+            el.style.transition = 'opacity 0.5s ease';
+            el.style.opacity = '0';
+            setTimeout(() => el.remove(), 500);
+        }, 6000);
+    });
+
+    // ── 4. Entrance animations via IntersectionObserver ────────
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'none';
+                observer.unobserve(entry.target);
             }
         });
-        block.innerHTML = htmlLines;
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.glass-card').forEach(card => {
+        // Skip cards that are already in view on load (handled by CSS animation)
+        if (!card.closest('.fade-in-up')) {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(16px)';
+            card.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+            observer.observe(card);
+        }
     });
 });
 
+/**
+ * Syntax-highlight raw git diff blocks already on the page.
+ */
+function highlightDiffs() {
+    document.querySelectorAll('.raw-diff').forEach(block => {
+        if (block.dataset.highlighted) return;   // skip if already done
+        block.dataset.highlighted = '1';
+
+        const lines = block.textContent.split('\n');
+        let html = '';
+        lines.forEach(line => {
+            if (line.startsWith('+') && !line.startsWith('+++')) {
+                html += `<span class="diff-line-added">${escapeHTML(line)}</span>`;
+            } else if (line.startsWith('-') && !line.startsWith('---')) {
+                html += `<span class="diff-line-removed">${escapeHTML(line)}</span>`;
+            } else {
+                html += `<span>${escapeHTML(line)}</span>\n`;
+            }
+        });
+        block.innerHTML = html;
+    });
+}
+
 function escapeHTML(str) {
-    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
 }

@@ -955,3 +955,102 @@ connection to server at "ep-plain-surf-ap2nx3w7-pooler.c-7.us-east-1.aws.neon.te
 2026-06-11 09:35:59,847 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:35:59] "GET / HTTP/1.1" 200 -
 2026-06-11 09:35:59,893 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:35:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
 2026-06-11 09:35:59,896 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:35:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 09:42:47,965 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 09:45:11,054 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:45:11] "GET /upload-log HTTP/1.1" 200 -
+2026-06-11 09:45:11,179 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:45:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 09:45:11,185 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:45:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 09:45:45,827 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:45:45] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-11 09:45:45,907 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-11 09:46:35,655 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:47:25,900 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:48:16,602 - services.ollama_service - ERROR - Failed to query Ollama API: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-06-11 09:48:18,694 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:48:18] "[32mGET /analyze?log_id=10 HTTP/1.1[0m" 302 -
+2026-06-11 09:48:19,145 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:48:19] "GET /report/5 HTTP/1.1" 200 -
+2026-06-11 09:48:19,369 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:48:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 09:48:19,370 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 09:48:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:05:05,084 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\pipeline_rca\\Pipeline_failure_RCA_Bot\\.venv\\Lib\\site-packages\\PIL\\AvifImagePlugin.py', reloading
+2026-06-11 10:05:05,898 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-11 10:05:07,210 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:05:07,542 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:05:07,552 - werkzeug - INFO -  * Debugger PIN: 347-440-561
+2026-06-11 10:06:58,619 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:06:58] "GET / HTTP/1.1" 200 -
+2026-06-11 10:06:59,231 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:06:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:06:59,235 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:06:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-11 10:10:12,027 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:12] "GET /upload-log HTTP/1.1" 200 -
+2026-06-11 10:10:12,198 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:10:12,220 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:10:50,533 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:50] "GET /history HTTP/1.1" 200 -
+2026-06-11 10:10:50,651 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:10:50,657 - werkzeug - INFO - 10.171.215.142 - - [11/Jun/2026 10:10:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:15:56,232 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:15:57,088 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GOPIKA SHREE K\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\requests\\__init__.py', reloading
+2026-06-11 10:16:01,701 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.145.218.142:5000
+2026-06-11 10:16:01,703 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-11 10:16:01,896 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-11 10:16:02,817 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-11 10:16:08,107 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:16:09,144 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:16:09,686 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:16:09,717 - werkzeug - INFO -  * Debugger PIN: 347-440-561
+2026-06-11 10:16:11,056 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:16:11,099 - werkzeug - INFO -  * Debugger PIN: 347-440-561
+2026-06-11 10:25:53,445 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\pipeline_rca\\config.py', reloading
+2026-06-11 10:25:53,445 - werkzeug - INFO -  * Detected change in 'G:\\pipeline_rca\\pipeline_rca\\config.py', reloading
+2026-06-11 10:26:01,892 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-11 10:26:01,931 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-06-11 10:26:10,048 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:26:10,106 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:26:12,297 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:26:12,321 - werkzeug - INFO -  * Debugger PIN: 347-440-561
+2026-06-11 10:26:12,334 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:26:12,372 - werkzeug - INFO -  * Debugger PIN: 347-440-561
+2026-06-11 10:26:12,728 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:12] "GET / HTTP/1.1" 200 -
+2026-06-11 10:26:13,067 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-11 10:26:13,305 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:13] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-06-11 10:26:14,825 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-11 10:26:24,853 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:24] "GET /upload-log HTTP/1.1" 200 -
+2026-06-11 10:26:25,356 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:25,703 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:26:30,046 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:30] "GET /history HTTP/1.1" 200 -
+2026-06-11 10:26:30,378 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:30,722 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:26:34,677 - services.github_service - WARNING - GitHub integration not fully configured. Using mock commit data.
+2026-06-11 10:26:35,502 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:35] "GET /github-analysis HTTP/1.1" 200 -
+2026-06-11 10:26:36,420 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:36,791 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:26:42,654 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:42] "GET /history HTTP/1.1" 200 -
+2026-06-11 10:26:43,023 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:43,818 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:26:50,847 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:50] "GET /report/5 HTTP/1.1" 200 -
+2026-06-11 10:26:52,175 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:52,677 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:26:58,885 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:58] "GET /upload-log HTTP/1.1" 200 -
+2026-06-11 10:26:59,444 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:26:59,603 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:26:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:28:16,542 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:16] "[32mPOST /upload-log HTTP/1.1[0m" 302 -
+2026-06-11 10:28:17,797 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:17] "GET / HTTP/1.1" 200 -
+2026-06-11 10:28:21,502 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:28:21,515 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:28:31,878 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:28:32,724 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:32] "GET /history HTTP/1.1" 200 -
+2026-06-11 10:28:33,522 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:28:34,023 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:28:52,534 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:52] "GET /report/5 HTTP/1.1" 200 -
+2026-06-11 10:28:52,754 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:28:52,776 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:28:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:28:53,389 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.145.218.142:5000
+2026-06-11 10:28:53,401 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-11 10:28:53,518 - werkzeug - INFO -  * Restarting with stat
+2026-06-11 10:29:03,908 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:29:03] "GET / HTTP/1.1" 200 -
+2026-06-11 10:29:09,513 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:29:09] "GET /upload-log HTTP/1.1" 200 -
+2026-06-11 10:29:09,932 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:29:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-11 10:29:10,009 - werkzeug - INFO - 127.0.0.1 - - [11/Jun/2026 10:29:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-06-11 10:29:19,565 - models - INFO - Initialized PostgreSQL database and created tables.
+2026-06-11 10:29:26,524 - werkzeug - WARNING -  * Debugger is active!
+2026-06-11 10:29:26,614 - werkzeug - INFO -  * Debugger PIN: 753-263-501
