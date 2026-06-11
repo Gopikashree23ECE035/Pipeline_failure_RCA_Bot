@@ -1,0 +1,6 @@
+2026-06-07 09:00:01 INFO ETL Pipeline Started
+2026-06-07 09:00:03 INFO Reading source file sales.csv
+2026-06-07 09:00:05 WARNING Deprecated configuration parameter detected
+2026-06-07 09:00:06 WARNING Legacy API endpoint used
+2026-06-07 09:00:20 INFO Loaded 10000 records successfully
+2026-06-07 09:00:21 INFO ETL Pipeline Completed Successfully

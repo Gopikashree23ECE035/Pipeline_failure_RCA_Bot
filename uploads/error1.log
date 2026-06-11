@@ -1,0 +1,30 @@
+2026-06-07 09:00:01 INFO ETL Pipeline Started
+2026-06-07 09:00:02 INFO Loading Configuration
+2026-06-07 09:00:03 INFO Connecting to PostgreSQL Database
+2026-06-07 09:00:05 INFO Database Connection Established
+2026-06-07 09:00:06 INFO Fetching Customer Records
+2026-06-07 09:00:08 INFO Processing Batch 1
+2026-06-07 09:00:10 ERROR Unexpected exception encountered
+
+Traceback (most recent call last):
+  File "pipeline/handler.py", line 42, in process_payload
+    timestamp = payload["timestamp"]
+KeyError: 'timestamp'
+
+2026-06-07 09:00:11 ERROR Data Transformation Failed
+2026-06-07 09:00:12 ERROR Rolling Back Transaction
+
+2026-06-07 09:00:13 ERROR Database Connection Lost
+2026-06-07 09:00:13 ERROR Unable to reconnect to database
+
+2026-06-07 09:00:14 CRITICAL ETL Pipeline Failure
+2026-06-07 09:00:14 CRITICAL Data Load Aborted
+
+2026-06-07 09:00:15 ALERT Downstream Reporting Service Unavailable
+2026-06-07 09:00:15 ALERT Dashboard Data Stale
+
+2026-06-07 09:00:16 FATAL Production Data Pipeline Outage
+2026-06-07 09:00:16 FATAL Incident Escalated To DevOps Team
+
+2026-06-07 09:00:17 SYSTEM SHUTDOWN INITIATED
+2026-06-07 09:00:18 ETL PROCESS TERMINATED
